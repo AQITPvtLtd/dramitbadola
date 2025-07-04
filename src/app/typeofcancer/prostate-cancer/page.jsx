@@ -3,7 +3,7 @@ import Prosate from './Prostate'
 
 const page = () => {
   return (
-    <div>
+    <div className='mt-20'>
         <Prosate />
     </div>
   )

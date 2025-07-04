@@ -3,7 +3,7 @@ import Cervical from './Cervical'
 
 const page = () => {
   return (
-    <div>
+    <div className='mt-20'>
         <Cervical />
     </div>
   )

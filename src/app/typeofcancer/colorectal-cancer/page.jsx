@@ -3,7 +3,7 @@ import Colorectal from './Colorectal'
 
 const page = () => {
   return (
-    <div>
+    <div className='mt-20'>
         <Colorectal />
     </div>
   )

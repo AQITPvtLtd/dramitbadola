@@ -3,7 +3,7 @@ import Mouth from './Mouth'
 
 const page = () => {
   return (
-    <div>
+    <div className='mt-20'>
         <Mouth />
     </div>
   )

@@ -3,7 +3,7 @@ import Brain from './Brain'
 
 const page = () => {
   return (
-    <div>
+    <div className='mt-20'>
         <Brain />
     </div>
   )

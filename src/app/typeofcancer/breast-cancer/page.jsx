@@ -3,7 +3,7 @@ import Breast from './Breast'
 
 const page = () => {
   return (
-    <div>
+    <div className='mt-20'>
         <Breast />
     </div>
   )

@@ -3,7 +3,7 @@ import Lung from './Lung'
 
 const page = () => {
   return (
-    <div>
+    <div className='mt-20'>
         <Lung />
     </div>
   )

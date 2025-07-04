@@ -3,7 +3,7 @@ import Treatments from './Treatments'
 
 const page = () => {
   return (
-    <div>
+    <div className='mt-20'>
         <Treatments />
     </div>
   )
