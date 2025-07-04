@@ -10,16 +10,17 @@ const Banner = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/banner/banner.png"
+          src="/banner/newbanner1.png"
           alt="Banner"
           fill
           priority
           className="object-cover w-full h-full"
         />
-        {/* Gradient Overlay */}
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-transparent z-10" />
+
+        {/* Updated Gradient Overlay */}
+        <div className="absolute inset-0 z-10 bg-gradient-to-b from-[#d0342c]/90 via-[#d0342c]/40 to-[#d0342c]/20" />
       </div>
+
 
       {/* Content */}
       <div className="relative z-20 h-full flex flex-col justify-center items-start px-6 sm:px-12 lg:px-24 max-w-4xl">

@@ -51,7 +51,7 @@ const Treatments = () => {
 
                                 {/* Circular Image */}
                                 <div className="flex justify-center items-center pt-6">
-                                    <div className="w-[260px] h-[200px] rounded-full overflow-hidden border-4 border-[#d0342c] shadow-md flex items-center justify-center">
+                                    <div className="w-[260px] h-[200px] rounded-full overflow-hidden border-2 border-[#d0342c] shadow-md flex items-center justify-center">
                                         <Image
                                             src={item.image}
                                             alt="treatment"

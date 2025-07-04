@@ -109,11 +109,10 @@ const Content = () => {
           <button
             key={category}
             onClick={() => setActiveCategory(category)}
-            className={`min-w-[140px] cursor-pointer text-center px-5 py-3 rounded-xl text-sm md:text-base shadow-sm transition-all duration-200 font-semibold h-[48px]
-              ${
-                activeCategory === category
-                  ? "bg-[#d0342c] text-white"
-                  : "bg-gray-100 text-gray-800 hover:bg-[#d0342c] hover:text-white"
+            className={`min-w-[140px] cursor-pointer text-center px-5 py-3 rounded-xl text-sm md:text-base shadow-sm transition-all duration-200 font-semibold
+              ${activeCategory === category
+                ? "bg-[#d0342c] text-white"
+                : "bg-gray-100 text-gray-800 hover:bg-[#d0342c] hover:text-white"
               }`}
           >
             {category}
@@ -135,10 +134,15 @@ const Content = () => {
             </h3>
             <ul className="space-y-4 text-gray-700 text-[16px] leading-relaxed">
               {item.content.map((text, index) => (
-                <li key={index} className="flex items-start gap-2">
-                  <FaCheckCircle className="text-[#d0342c] mt-1" />
-                  <span>{text}</span>
-                </li>
+                <div className="flex gap-2">
+                  <div>
+                    <FaCheckCircle className="text-[#d0342c] mt-1" />
+                  </div>
+                  <li key={index} className="flex items-start gap-2">
+
+                    <span>{text}</span>
+                  </li>
+                </div>
               ))}
             </ul>
           </div>
