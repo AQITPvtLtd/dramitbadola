@@ -99,7 +99,7 @@ const Header = () => {
                           mobileDropdownOpen === index ? null : index
                         )
                       }
-                      className="w-full text-left px-0 py-2"
+                      className="w-full text-left px-0"
                     >
                       <span className="flex items-center justify-between w-full">
                         {item.label}

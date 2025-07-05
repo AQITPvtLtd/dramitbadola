@@ -51,9 +51,9 @@ const Contact = () => {
                     </div>
                     <h3 className="text-lg font-semibold mb-2">Head Office</h3>
                     <p>
-                        Jalan Cempaka Wangi No 22
+                        Max Super Speciality Hospital, Johri,
                         <br />
-                        Jakarta - Indonesia
+                        Malsi, Dehradun, Uttarakhand 248001
                     </p>
                 </div>
 
@@ -64,9 +64,7 @@ const Contact = () => {
                     </div>
                     <h3 className="text-lg font-semibold mb-2">Email Support</h3>
                     <p>
-                        support@yourdomain.tld
-                        <br />
-                        hello@yourdomain.tld
+                        dramitoncology@gmail.com
                     </p>
                 </div>
 
@@ -77,9 +75,7 @@ const Contact = () => {
                     </div>
                     <h3 className="text-lg font-semibold mb-2">Let's Talk</h3>
                     <p>
-                        Phone : +6221.2002.2012
-                        <br />
-                        Fax : +6221.2002.2013
+                        Phone : 9286471180
                     </p>
                 </div>
 

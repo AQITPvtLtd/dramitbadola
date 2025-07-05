@@ -74,7 +74,7 @@ const Footer = () => {
               <li className="flex items-start gap-3 mb-5">
                 <IoIosCall className="text-white text-2xl" />
                 <div className='hover:text-gray-300 cursor-pointer'>
-                  +1 123 456 789
+                  9286471180
                 </div>
               </li>
             </Link>
@@ -82,7 +82,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <FaEnvelope className="text-white text-2xl" />
                 <div className='hover:text-gray-300 cursor-pointer'>
-                  contact@dentiacare.com
+                  dramitoncology@gmail.com
                 </div>
               </li>
             </Link>

@@ -5,7 +5,7 @@ const Page = async ({ params }) => {
     const url = params.url;
 
     return (
-        <div className="bg-gray-200">
+        <div className="mt-20">
             <Treatmentdata url={url} />
         </div>
     );

@@ -77,17 +77,17 @@ const Contact = () => {
                         {
                             icon: <FaMapMarkerAlt className="text-[#d0342c] text-2xl" />,
                             title: "Head Office",
-                            desc: <>Jalan Cempaka Wangi No 22<br />Jakarta - Indonesia</>
+                            desc: <>Max Super Speciality Hospital, Johri,<br />Malsi, Dehradun, Uttarakhand 248001</>
                         },
                         {
                             icon: <FaEnvelope className="text-[#d0342c] text-2xl" />,
                             title: "Email Support",
-                            desc: <>support@yourdomain.tld<br />hello@yourdomain.tld</>
+                            desc: <>dramitoncology@gmail.com</>
                         },
                         {
                             icon: <FaPhoneAlt className="text-[#d0342c] text-2xl" />,
                             title: "Let's Talk",
-                            desc: <>Phone : +6221.2002.2012<br />Fax : +6221.2002.2013</>
+                            desc: <>Phone : 9286471180</>
                         },
                         {
                             icon: <FaClock className="text-[#d0342c] text-2xl" />,

@@ -13,7 +13,7 @@ const Treatmentdata = ({ url }) => {
     }
 
     return (
-        <div className="mx-auto px-4 py-8">
+        <div className="mx-auto px-4 py-8 bg-[#f4fcfc]">
             <div className="flex flex-col items-center">
                 {/* Image Section */}
                 <div className="w-full max-w-8xl relative">
