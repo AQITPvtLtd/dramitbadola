@@ -130,7 +130,7 @@ const Form = () => {
             className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10"
         >
             <h1 className="text-3xl font-bold text-[#d0342c] text-center mb-6" style={{ fontFamily: "Roboto Slab, serif" }}>
-                Book Appointment
+                Submit Your Query
             </h1>
             <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
@@ -196,15 +196,25 @@ const Form = () => {
                     <label htmlFor="MedicalReport" className="block text-md font-medium mb-2 text-gray-700 dark:text-black">
                         Upload Medical Report (Optional)
                     </label>
-                    <input
-                        ref={el => inputRefs.current[5] = el}
-                        type="file"
-                        id="MedicalReport"
-                        name="MedicalReport"
-                        onChange={handleFileChange}
-                        accept=".pdf, .doc, .docx, .xls, .xlsx, .txt, .jpg, .png, .jpeg, .avif"
-                        className="border bg-gray-100 border-gray-300 p-3 rounded-md w-full focus:border-[#d0342c] focus:ring-1 focus:ring-[#d0342c] dark:text-black outline-none"
-                    />
+                    <div className="w-full border bg-gray-100 border-gray-300 rounded-md p-2 focus-within:border-[#d0342c] focus-within:ring-1 focus-within:ring-[#d0342c]">
+                        <input
+                            ref={el => inputRefs.current[5] = el}
+                            type="file"
+                            id="MedicalReport"
+                            name="MedicalReport"
+                            onChange={handleFileChange}
+                            accept=".pdf, .doc, .docx, .xls, .xlsx, .txt, .jpg, .png, .jpeg, .avif"
+                            className="w-full text-sm text-gray-700 bg-transparent file:mr-4 file:py-2 file:px-4
+               file:rounded-md file:border-0
+               file:text-sm file:font-semibold
+               file:bg-[#d0342c] file:text-white
+               hover:file:bg-[#b62e27]
+               focus:outline-none"
+                        />
+                    </div>
+
+
+
                 </div>
 
                 <div className="text-center mt-4">
@@ -213,8 +223,8 @@ const Form = () => {
                             <ClipLoader width="60" height="60" color="#eb5f30" className="animate-spin" />
                         </div>
                     ) : (
-                        <button className="bg-[#d0342c] border-2 border-[#d0342c] font-semibold cursor-pointer px-6 py-3 text-white rounded-xl hover:bg-white hover:text-[#d0342c] transition duration-300">
-                            Send Message
+                        <button className="bg-[#d0342c] border-2 border-[#d0342c] w-fit font-semibold cursor-pointer px-6 py-3 text-white rounded-xl hover:bg-white hover:text-[#d0342c] transition duration-300">
+                            Submit
                         </button>
                     )}
                 </div>

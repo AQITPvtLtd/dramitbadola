@@ -57,14 +57,14 @@ const About = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-12 px-4 md:px-12 lg:px-24 bg-[#f4fcfc]"
+      className="py-12 px-4 md:px-12 lg:px-24 bg-[#f2efef]"
     >
       <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-10">
         {/* Image */}
         <div ref={imageRef} className="flex-shrink-0">
-          <div className="relative w-[300px] h-[358px] rounded-xl overflow-hidden">
+          <div className="relative w-[300px] h-[358px] mt-7 rounded-xl overflow-hidden transition-transform duration-300 hover:scale-105">
             <Image
-              src="/about/doctor.png"
+              src="/about/doctorimg.jpeg"
               alt="Portrait of Dr. Amit Badola, Consultant in Medical Oncology"
               fill
               className="object-cover"

@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Content = () => {
   const [activeCategory, setActiveCategory] = useState("Work Experience");
-  const contentRef = useRef(null); // 👈 ref for animation
+  const contentRef = useRef(null); // ✅ ref only for content box
 
   const categories = [
     "Work Experience",
@@ -84,7 +84,7 @@ const Content = () => {
     const ctx = gsap.context(() => {
       gsap.from(contentRef.current, {
         opacity: 0,
-        y: 80, // 👈 down to up
+        y: 80,
         duration: 1.2,
         ease: "power3.out",
         scrollTrigger: {
@@ -95,14 +95,11 @@ const Content = () => {
       });
     });
 
-    return () => ctx.revert(); // cleanup
+    return () => ctx.revert();
   }, [activeCategory]);
 
   return (
-    <div
-      className="max-w-6xl mx-auto px-4 py-8 md:flex gap-8"
-      ref={contentRef} // 👈 ref applied here
-    >
+    <div className="max-w-6xl mx-auto px-4 py-8 md:flex gap-8">
       {/* Sidebar Tabs */}
       <div className="flex flex-wrap md:flex-col justify-center md:justify-start gap-3 w-full md:w-1/3 mb-6 md:mb-0">
         {categories.map((category) => (
@@ -120,33 +117,32 @@ const Content = () => {
         ))}
       </div>
 
-      {/* Main Content */}
-      <div className="w-full md:w-2/3">
-        {AboutContent.filter(
-          (item) => item.category === activeCategory
-        ).map((item) => (
-          <div key={item.id} className="bg-white p-6 rounded-lg shadow-md">
-            <h3
-              className="text-xl text-center font-semibold mb-4 text-[#d0342c]"
-              style={{ fontFamily: "Roboto Slab, serif" }}
-            >
-              {item.category}
-            </h3>
-            <ul className="space-y-4 text-gray-700 text-[16px] leading-relaxed">
-              {item.content.map((text, index) => (
-                <div className="flex gap-2">
-                  <div>
-                    <FaCheckCircle className="text-[#d0342c] mt-1" />
+      {/* Main Content with animation */}
+      <div className="w-full md:w-2/3" ref={contentRef}>
+        {AboutContent.filter((item) => item.category === activeCategory).map(
+          (item) => (
+            <div key={item.id} className="bg-white p-6 rounded-lg shadow-md">
+              <h3
+                className="text-xl text-center font-semibold mb-4 text-[#d0342c]"
+                style={{ fontFamily: "Roboto Slab, serif" }}
+              >
+                {item.category}
+              </h3>
+              <ul className="space-y-4 text-gray-700 text-[16px] leading-relaxed">
+                {item.content.map((text, index) => (
+                  <div key={index} className="flex gap-2">
+                    <div>
+                      <FaCheckCircle className="text-[#d0342c] mt-1" />
+                    </div>
+                    <li className="flex items-start gap-2">
+                      <span>{text}</span>
+                    </li>
                   </div>
-                  <li key={index} className="flex items-start gap-2">
-
-                    <span>{text}</span>
-                  </li>
-                </div>
-              ))}
-            </ul>
-          </div>
-        ))}
+                ))}
+              </ul>
+            </div>
+          )
+        )}
       </div>
     </div>
   );

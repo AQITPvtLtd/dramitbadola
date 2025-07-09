@@ -32,7 +32,12 @@ const Header = () => {
               onMouseLeave={() => setDesktopDropdownOpen(null)}
             >
               {!item.dropdown ? (
-                <Link href={item.href}>{item.label}</Link>
+                <Link
+                  href={item.href}
+                  className="transition-colors duration-200 hover:text-[#d0342c]"
+                >
+                  {item.label}
+                </Link>
               ) : (
                 <>
                   <button className="flex items-center gap-1 px-2 py-1 cursor-pointer">
@@ -66,7 +71,7 @@ const Header = () => {
         {/* Right Side */}
         <div className="flex items-center gap-4">
           <Link href="/contact">
-            <button className="bg-[#d0342c] hover:bg-[#b22d26] text-white font-semibold py-2 px-4 rounded hidden md:block">
+            <button className="bg-[#d0342c] hover:bg-[#b22d26] cursor-pointer text-white font-semibold py-2 px-4 rounded hidden md:block">
               Book Appointment
             </button>
           </Link>
@@ -88,9 +93,14 @@ const Header = () => {
             {navItems.map((item, index) => (
               <div key={index}>
                 {!item.dropdown ? (
-                  <Link href={item.href} onClick={() => setIsOpen(false)}>
+                  <Link
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="transition-colors duration-200 hover:text-[#d0342c]"
+                  >
                     {item.label}
                   </Link>
+
                 ) : (
                   <>
                     <button

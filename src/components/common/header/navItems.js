@@ -23,8 +23,9 @@ export const navItems = [
   {
     label: "Media",
     dropdown: [
-      { label: "Photos", href: "/media/gallery" },
+      { label: "Photos Gallery", href: "/media/gallery" },
       { label: "Videos", href: "/media/videos" },
+      { label: "Certificates", href: "/media/certificates" },
     ],
   },
 ];

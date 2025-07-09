@@ -42,9 +42,9 @@ const Feedback = () => {
   };
 
   return (
-    <section className="py-20 px-6 md:px-12 lg:px-24 bg-[#f4fcfc] text-center">
-      <p className="text-blue-600 font-medium mb-2">Testimonials</p>
-      <h2 className="text-4xl font-bold text-gray-900 mb-10">
+    <section className="py-20 px-6 md:px-12 lg:px-24 bg-[#f2efef] text-center">
+      <p className="text-[#d0342c] font-medium mb-2">Testimonials</p>
+      <h2 className="text-4xl font-bold text-gray-900 mb-10" style={{ fontFamily: "Roboto Slab, serif" }}>
         Customer Feedback & <br /> Comments.
       </h2>
 

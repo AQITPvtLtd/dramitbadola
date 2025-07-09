@@ -25,7 +25,7 @@ const Blog = () => {
   }, []);
 
   return (
-    <div className="lg:p-10 overflow-x-clip px-4 bg-[#f4fcfc]">
+    <div className="lg:p-10 overflow-x-clip px-4 bg-[#f2efef]">
       <div className="pt-5 text-center">
         <h1 className="text-3xl font-bold dark:text-black">Latest Blog</h1>
         <p className="text-lg dark:text-black">Read our latest blog.</p>
@@ -45,7 +45,7 @@ const Blog = () => {
                 src={`/blog/${b.image}`}
                 width={500}
                 height={300}
-                className="w-full h-[200px] object-cover"
+                className="w-full h-[200px]"
                 alt={b.title || "blog image"}
               />
               <div className="p-4">

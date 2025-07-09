@@ -3,7 +3,7 @@ import Gallery from './Gallery'
 
 const page = () => {
   return (
-    <div>
+    <div className='mt-50 mb-50'>
         <Gallery />
     </div>
   )

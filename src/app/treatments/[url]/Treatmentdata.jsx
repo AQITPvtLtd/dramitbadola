@@ -3,7 +3,7 @@ import { data as allData } from '@/data/info';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaArrowRightFromBracket } from "react-icons/fa6";
+import { TbArrowBigRightLines } from "react-icons/tb";
 
 const Treatmentdata = ({ url }) => {
     const service = allData.find((a) => a.url === url);
@@ -13,7 +13,7 @@ const Treatmentdata = ({ url }) => {
     }
 
     return (
-        <div className="mx-auto px-4 py-8 bg-[#f4fcfc]">
+        <div className="mx-auto px-4 py-8 bg-[#f2efef]">
             <div className="flex flex-col items-center">
                 {/* Image Section */}
                 <div className="w-full max-w-8xl relative">
@@ -43,19 +43,19 @@ const Treatmentdata = ({ url }) => {
                     </div>
 
                     {/* Sidebar Section */}
-                    <div className="shadow-2xl sticky top-20 bg-white px-4 py-4 rounded-lg col-span-3 w-auto h-fit mt-10 lg:mt-0">
+                    <div className="shadow-2xl sticky top-52 bg-white px-4 py-4 rounded-lg col-span-3 w-auto h-fit mt-10 lg:mt-0">
                         <h2
                             className="text-xl font-semibold mb-4 dark:text-black"
                             style={{ fontFamily: "Roboto Slab, serif" }}
                         >
-                            Other Treatments
+                            Our Treatments
                         </h2>
                         <ul className="space-y-2">
                             {allData.map((item) => (
                                 <li key={item.url}>
                                     <Link href={`${item.url}`}>
                                         <span className="cursor-pointer text-blue-500 hover:underline flex gap-2">
-                                            <FaArrowRightFromBracket className='mt-1' /> {item.title}
+                                            <TbArrowBigRightLines className='mt-1' /> {item.title}
                                         </span>
                                     </Link>
                                 </li>
@@ -64,7 +64,7 @@ const Treatmentdata = ({ url }) => {
                         <div className="pt-3">
                             <Link
                                 href={`/contact`}
-                                className="px-4 py-2 bg-[#d0342c] text-white text-lg rounded-lg block text-center transition-all border-2 border-transparent hover:border-[#d0342c] hover:text-black hover:bg-white"
+                                className="px-4 py-2 bg-[#d0342c] text-white text-lg rounded-lg block text-center transition-all border-2 border-transparent hover:border-[#d0342c] hover:text-[#d0342c] hover:bg-white"
                             >
                                 Book Your Appointment
                             </Link>

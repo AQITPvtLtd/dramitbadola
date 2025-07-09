@@ -46,12 +46,12 @@ const Faq = () => {
   }, []);
 
   return (
-    <section className="py-20 px-6 md:px-12 lg:px-24 bg-[#f4fcfc]">
+    <section className="py-20 px-6 md:px-12 lg:px-24 lg:mx-15 mx-5 bg-[#f2efef]">
       <div className="grid lg:grid-cols-2 gap-12 items-start">
         {/* Left Heading */}
         <div>
           <p className="text-[#d0342c] font-medium mb-2" style={{ fontFamily: "Roboto Slab, serif" }}>Everything You Need to Know</p>
-          <h2 className="text-4xl font-bold text-gray-900 leading-tight" style={{ fontFamily: "Roboto Slab, serif" }}>
+          <h2 className="text-5xl font-bold text-gray-900 leading-tight" style={{ fontFamily: "Roboto Slab, serif" }}>
             Frequently Asked<br />Questions
           </h2>
         </div>

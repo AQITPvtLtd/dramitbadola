@@ -7,7 +7,7 @@ import { data } from "@/data/info";
 
 const Treatments = () => {
     return (
-        <div className="px-4 pb-10 bg-[#f4fcfc]">
+        <div className="px-4 pb-10 bg-[#f2efef]">
             <h1
                 className="text-center font-bold text-2xl lg:text-3xl text-gray-800 pt-8 pb-6"
                 style={{ fontFamily: "Roboto Slab, serif" }}

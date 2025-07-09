@@ -22,7 +22,7 @@ const DetailedBlog = ({ id, url }) => {
     const blogDetail = blog?.find((b) => b.id == id && b.url == url);
 
     return (
-        <section className="overflow-hidden pt-10 lg:px-14 px-3 dark:bg-white">
+        <section className="overflow-hidden pt-10 lg:px-14 px-3 bg-[#f2efef]">
             <div className="container dark:text-black">
                 <div className="-mx-4 flex flex-wrap">
                     <div className="max-w-6xl px-4">
@@ -30,13 +30,13 @@ const DetailedBlog = ({ id, url }) => {
                             <h1 className="mb-5 text-3xl font-bold leading-tight text-black sm:text-4xl sm:leading-tight">
                                 {blogDetail?.title}
                             </h1>
-                            <div className="mb-5 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
+                            <div className="mb-5 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-black dark:border-opacity-10">
                                 <div className="flex flex-wrap items-center">
                                     <div className="mb-5 mr-10 flex items-center">
-                                        <FaUser className="mr-2 text-[#ef1a76]" />
+                                        <FaUser className="mr-2 text-[#d0342c]" />
                                         <div className="w-full">
                                             <span className="mb-1 text-base font-medium text-body-color">
-                                                By <span> Dr. Devavrat Arya</span>
+                                                By <span> Dr. Amit Badola</span>
                                             </span>
                                         </div>
                                     </div>
@@ -47,7 +47,7 @@ const DetailedBlog = ({ id, url }) => {
                                                     width="15"
                                                     height="15"
                                                     viewBox="0 0 15 15"
-                                                    className="fill-current text-[#ef1a76]"
+                                                    className="fill-current text-[#d0342c]"
                                                 >
                                                     <path d="M3.89531 8.67529H3.10666C2.96327 8.67529 2.86768 8.77089 2.86768 8.91428V9.67904C2.86768 9.82243 2.96327 9.91802 3.10666 9.91802H3.89531C4.03871 9.91802 4.1343 9.82243 4.1343 9.67904V8.91428C4.1343 8.77089 4.03871 8.67529 3.89531 8.67529Z" />
                                                     <path d="M6.429 8.67529H5.64035C5.49696 8.67529 5.40137 8.77089 5.40137 8.91428V9.67904C5.40137 9.82243 5.49696 9.91802 5.64035 9.91802H6.429C6.57239 9.91802 6.66799 9.82243 6.66799 9.67904V8.91428C6.66799 8.77089 6.5485 8.67529 6.429 8.67529Z" />

@@ -4,7 +4,7 @@ import DetailedBlog from './DetailedBlog'
 const page = ({ params }) => {
     const { id, url } = params
     return (
-        <div>
+        <div className='mt-20'>
             <DetailedBlog id={id} url={url} />
         </div>
     )

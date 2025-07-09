@@ -4,12 +4,9 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import {
-  FaFacebookF,
-  FaXTwitter,
   FaWhatsapp,
-  FaInstagram,
-  FaYoutube,
 } from 'react-icons/fa6';
+import { FaLinkedin } from "react-icons/fa";
 import { FaEnvelope } from 'react-icons/fa';
 import { IoLocationSharp } from "react-icons/io5";
 import { IoIosCall } from "react-icons/io";
@@ -23,12 +20,10 @@ const Footer = () => {
           <Link href="/">
             <Image src='/logo/logo1.png' width={200} height={200} alt='Logo' className='w-52 h-auto' />
           </Link>
-          <div className="flex gap-4 text-2xl text-white mt-5">
-            <FaFacebookF target="__blank" className="hover:text-white cursor-pointer transition-transform duration-500 hover:scale-125" />
-            <FaXTwitter target="__blank" className="hover:text-white cursor-pointer transition-transform duration-500 hover:scale-125" />
-            <FaWhatsapp target="__blank" className="hover:text-white cursor-pointer transition-transform duration-500 hover:scale-125" />
-            <FaInstagram target="__blank" className="hover:text-white cursor-pointer transition-transform duration-500 hover:scale-125" />
-            <FaYoutube target="__blank" className="hover:text-white cursor-pointer transition-transform duration-500 hover:scale-125" />
+          <p className='mt-5'>Dr. Amit Badola is a dedicated and highly experienced Medical Oncologist at Max Super Speciality Hospital.</p>
+          <div className="flex gap-4 text-3xl text-white mt-5">
+            <Link href="https://www.linkedin.com/in/dr-amit-badola-b41b772a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="__blank"><FaLinkedin className="hover:text-white cursor-pointer transition-transform duration-500 hover:scale-125" /></Link>
+            <Link href="https://wa.me/919286471180" target="__blank"><FaWhatsapp  className="hover:text-white cursor-pointer transition-transform duration-500 hover:scale-125" /></Link>
           </div>
         </div>
 
@@ -38,8 +33,9 @@ const Footer = () => {
           <ul className="space-y-2 text-sm text-white">
             <li className='hover:text-gray-300'><a href="/">Home</a></li>
             <li className='hover:text-gray-300'><a href="/about">About</a></li>
-            <li className='hover:text-gray-300'><a href="">Blogs</a></li>
-            <li className='hover:text-gray-300'><a href="">Media</a></li>
+            <li className='hover:text-gray-300'><a href="/blogs">Blogs</a></li>
+            <li className='hover:text-gray-300'><a href="/media/gallery">Photo Gallery</a></li>
+            <li className='hover:text-gray-300'><a href="/media/videos">Videos</a></li>
             <li className='hover:text-gray-300'><a href="/contact">Book Appointment</a></li>
           </ul>
         </div>
@@ -48,13 +44,13 @@ const Footer = () => {
         <div>
           <h4 className="text-white font-semibold mb-4">Treatments</h4>
           <ul className="space-y-2 text-sm text-white">
-            <li className='hover:text-gray-300'><a href="#">Chemotheray</a></li>
-            <li className='hover:text-gray-300'><a href="#">Targeted Therapy</a></li>
-            <li className='hover:text-gray-300'><a href="#">Immunotherapy</a></li>
-            <li className='hover:text-gray-300'><a href="#">Stem Cell Transplant</a></li>
-            <li className='hover:text-gray-300'><a href="#">Supportive Care</a></li>
-            <li className='hover:text-gray-300'><a href="#">Radiation Therapy</a></li>
-            <li className='hover:text-gray-300'><a href="#">Clinical Trials</a></li>
+            <li className='hover:text-gray-300'><a href="/treatments/chemotherapy">Chemotheray</a></li>
+            <li className='hover:text-gray-300'><a href="/treatments/targeted-therapy">Targeted Therapy</a></li>
+            <li className='hover:text-gray-300'><a href="/treatments/immunotherapy">Immunotherapy</a></li>
+            <li className='hover:text-gray-300'><a href="/treatments/stem-cell-transplant">Stem Cell Transplant</a></li>
+            <li className='hover:text-gray-300'><a href="/treatments/supportive-care">Supportive Care</a></li>
+            <li className='hover:text-gray-300'><a href="/treatments/radiation-therapy">Radiation Therapy</a></li>
+            <li className='hover:text-gray-300'><a href="/treatments/clinical-trials">Clinical Trials</a></li>
           </ul>
         </div>
 
@@ -66,19 +62,19 @@ const Footer = () => {
               <li className="flex items-start gap-3 mb-5">
                 <IoLocationSharp className="text-white text-4xl" />
                 <div className='hover:text-gray-300 cursor-pointer'>
-                  Max Super Speciality Hospital, Johri, Malsi, Dehradun, Uttarakhand 248001
+                  59/1, Race Course, Opp. UCO Bank, Dehradun (U.K) 248001
                 </div>
               </li>
             </Link>
-            <Link href="" target='_blank'>
+            <Link href="tel:9286471180" target='_blank'>
               <li className="flex items-start gap-3 mb-5">
                 <IoIosCall className="text-white text-2xl" />
                 <div className='hover:text-gray-300 cursor-pointer'>
-                  9286471180
+                  +91 92864 71180
                 </div>
               </li>
             </Link>
-            <Link href="" target='_blank'>
+            <Link href="mailto:dramitoncology@gmail.com" target='_blank'>
               <li className="flex items-start gap-3">
                 <FaEnvelope className="text-white text-2xl" />
                 <div className='hover:text-gray-300 cursor-pointer'>
@@ -92,7 +88,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="mt-8 flex justify-center items-center text-lg font-semibold text-white text-center">
-        <a href="#" className="hover:text-gray-400" style={{ fontFamily: "Roboto Slab, serif" }}>
+        <a href="https://tekbooster.com/" target='_blank' className="hover:text-[#D1D5DB]" style={{ fontFamily: "Roboto Slab, serif" }}>
           Design & Developed By Tek Booster (Digital Marketing Company)
         </a>
       </div>

@@ -5,8 +5,7 @@ import { useInView } from "framer-motion";
 const stats = [
   { number: 10000, label: "Happy Patients" },
   { number: 88, label: "Success Rate" },
-  { number: 800, label: "Dental Implants" },
-  { number: 15, label: "Years of Experience" },
+  { number: 5, label: "Years of Experience" },
 ];
 
 const AnimatedNumber = ({ target, suffix = "+" }) => {
@@ -37,8 +36,8 @@ const AnimatedNumber = ({ target, suffix = "+" }) => {
 
 const Statistics = () => {
   return (
-    <section className="bg-[#d0342c] py-12">
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+    <section className="bg-[#d0342c] py-12 flex justify-center items-center">
+      <div className="max-w-6xl w-full px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center text-white">
         {stats.map((item, index) => (
           <div key={index}>
             <h3 className="text-3xl font-bold">

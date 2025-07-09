@@ -6,7 +6,7 @@ import Type from '@/components/common/Type';
 const Brain = () => {
     return (
         <div>
-            <div className="mx-auto py-12 bg-[#f4fcfc]">
+            <div className="mx-auto py-12 bg-[#f2efef]">
                 <div className="flex flex-col items-center">
                     {/* Image Section */}
                     <div className="w-full max-w-8xl px-5 relative">

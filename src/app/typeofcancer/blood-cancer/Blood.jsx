@@ -6,7 +6,7 @@ import Type from '@/components/common/Type';
 const Blood = () => {
     return (
         <div>
-            <div className="mx-auto py-12 bg-[#f4fcfc]">
+            <div className="mx-auto py-12 bg-[#f2efef]">
                 <div className="flex flex-col items-center">
                     {/* Image Section */}
                     <div className="w-full max-w-8xl px-5 relative">
@@ -168,7 +168,7 @@ const Blood = () => {
                                 Blood cancer is a serious but increasingly treatable disease, thanks to advancements in early diagnosis and medical research. Whether it's leukemia, lymphoma, or multiple myeloma, understanding the symptoms, seeking timely medical attention, and choosing the right treatment path can significantly improve outcomes.</p>
 
                         </div>
-                        <div className="col-span-3 sticky top-20">
+                        <div className="col-span-3">
                             <Type />
                         </div>
                     </div>
