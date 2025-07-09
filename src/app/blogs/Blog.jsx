@@ -55,14 +55,15 @@ const Blog = () => {
                   <span>{b.date ? moment(b.date).format("MMMM DD, YYYY") : "Unknown Date"}</span>
                 </div>
                 <p className="text-gray-700 line-clamp-3">{b.short_desc}</p>
-                <Link href={`/blogs/${b.id}/${b.url}`}>
-                  <button className="px-3 py-1.5 mt-3 cursor-pointer bg-[#d0342c] text-white text-lg rounded-lg block text-center transition-all 
-                                           border-2 border-transparent hover:border-[#d0342c] hover:text-black hover:bg-white">
-                    Read More
-                  </button>
-                </Link>
+                <div
+                  className="px-3 py-1.5 mt-3 cursor-pointer bg-[#d0342c] text-white text-lg rounded-lg block text-center transition-all 
+                border-2 border-transparent hover:border-[#d0342c] hover:text-black hover:bg-white"
+                >
+                  Read More
+                </div>
               </div>
             </Link>
+
           ))}
         </div>
       )}
