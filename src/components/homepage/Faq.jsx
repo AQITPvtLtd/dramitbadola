@@ -65,7 +65,7 @@ const Faq = () => {
               className="border-b pb-4 opacity-0"
             >
               <button
-                className="w-full flex justify-between items-center text-left text-gray-900 font-medium text-base focus:outline-none"
+                className="w-full flex justify-between items-center text-left text-gray-900 font-semibold text-base focus:outline-none"
                 onClick={() => toggle(index)}
               >
                 {faq.question}

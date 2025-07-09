@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { FaArrowLeft, FaArrowRight, FaStar } from 'react-icons/fa';
 
 const testimonials = [
@@ -32,53 +32,48 @@ const testimonials = [
 const Feedback = () => {
   const [current, setCurrent] = useState(0);
   const total = testimonials.length;
-
-  const prevSlide = () => {
-    setCurrent((prev) => (prev === 0 ? total - 1 : prev - 1));
-  };
+  const sliderRef = useRef(null);
 
   const nextSlide = () => {
     setCurrent((prev) => (prev === total - 1 ? 0 : prev + 1));
   };
 
+  const prevSlide = () => {
+    setCurrent((prev) => (prev === 0 ? total - 1 : prev - 1));
+  };
+
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="py-20 px-6 md:px-12 lg:px-24 bg-[#f2efef] text-center">
+    <section className="pb-5 px-6 md:px-12 lg:px-24 bg-[#f2efef] text-center overflow-hidden">
       <p className="text-[#d0342c] font-medium mb-2">Testimonials</p>
-      <h2 className="text-4xl font-bold text-gray-900 mb-10" style={{ fontFamily: "Roboto Slab, serif" }}>
+      <h2 className="text-4xl font-bold text-gray-900 mb-10" style={{ fontFamily: 'Roboto Slab, serif' }}>
         Customer Feedback & <br /> Comments.
       </h2>
 
-      {/* Avatar Row */}
-      {/* <div className="flex justify-center items-center gap-4 mb-10 flex-wrap">
-        {[...Array(7)].map((_, i) => (
-          <div
-            key={i}
-            className="w-14 h-14 rounded-full bg-gray-200 overflow-hidden border border-gray-300"
-          >
-            <img
-              src={`/logo${(i % 5) + 1}.png`}
-              alt={`Client ${i + 1}`}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        ))}
-      </div> */}
-
-      {/* Testimonial Box */}
-      <div className="max-w-3xl mx-auto relative transition-all duration-500 ease-in-out">
-        <div className="flex justify-center mb-4 text-yellow-400">
-          {[...Array(5)].map((_, i) => (
-            <FaStar key={i} />
+      {/* Slider Wrapper */}
+      <div className="relative max-w-3xl mx-auto overflow-hidden">
+        <div
+          ref={sliderRef}
+          className="flex transition-transform duration-700 ease-in-out"
+          style={{ transform: `translateX(-${current * 100}%)` }}
+        >
+          {testimonials.map((item, index) => (
+            <div key={index} className="min-w-full px-4 md:px-8 py-4">
+              <div className="flex justify-center mb-4 text-yellow-400">
+                {[...Array(5)].map((_, i) => (
+                  <FaStar key={i} />
+                ))}
+              </div>
+              <p className="text-gray-600 text-lg leading-relaxed mb-6 min-h-[120px]">
+                {item.text}
+              </p>
+              <h4 className="font-semibold text-gray-900 text-lg">{item.name}</h4>
+            </div>
           ))}
-        </div>
-
-        <div className="transition-all duration-500 ease-in-out px-4 md:px-8">
-          <p className="text-gray-600 text-lg leading-relaxed mb-6 min-h-[120px]">
-            “{testimonials[current].text}”
-          </p>
-          <h4 className="font-semibold text-gray-900 text-lg">
-            {testimonials[current].name}
-          </h4>
         </div>
 
         {/* Navigation */}
