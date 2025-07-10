@@ -50,7 +50,7 @@ const Contact = () => {
                         </div>
                         <h3 className="text-lg font-semibold mb-2">Location</h3>
                         <p>
-                            59/1, Race Course, Opp. UCO Bank, Dehradun (U.K) 248001
+                            59/1, Race Course, Opp. UCO Bank, Dehradun, Uttarakhand - 248001
                         </p>
                     </div>
                 </Link>

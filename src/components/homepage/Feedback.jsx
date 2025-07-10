@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { FaArrowLeft, FaArrowRight, FaStar } from 'react-icons/fa';
 
 const testimonials = [
@@ -31,52 +31,83 @@ const testimonials = [
 
 const Feedback = () => {
   const [current, setCurrent] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(true);
   const total = testimonials.length;
   const sliderRef = useRef(null);
 
+  const extendedTestimonials = [...testimonials, testimonials[0]]; // 👈 add first slide at end
+
   const nextSlide = () => {
-    setCurrent((prev) => (prev === total - 1 ? 0 : prev + 1));
+    setCurrent((prev) => prev + 1);
   };
 
   const prevSlide = () => {
-    setCurrent((prev) => (prev === 0 ? total - 1 : prev - 1));
+    if (current === 0) {
+      setIsTransitioning(false);
+      setCurrent(total);
+      setTimeout(() => {
+        setIsTransitioning(true);
+        setCurrent(total - 1);
+      }, 20);
+    } else {
+      setCurrent((prev) => prev - 1);
+    }
   };
 
+  // Auto Slide
   useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
+
+  // Reset to real first slide without animation
+  useEffect(() => {
+    if (current === total) {
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrent(0);
+      }, 700); // match transition duration
+
+      setTimeout(() => {
+        setIsTransitioning(true);
+      }, 750);
+    }
+  }, [current]);
 
   return (
     <section className="pb-5 px-6 md:px-12 lg:px-24 bg-[#f2efef] text-center overflow-hidden">
       <p className="text-[#d0342c] font-medium mb-2">Testimonials</p>
       <h2 className="text-4xl font-bold text-gray-900 mb-10" style={{ fontFamily: 'Roboto Slab, serif' }}>
-        Customer Feedback & <br /> Comments.
+        Patients Feedback & <br /> Comments.
       </h2>
 
-      {/* Slider Wrapper */}
       <div className="relative max-w-3xl mx-auto overflow-hidden">
         <div
           ref={sliderRef}
-          className="flex transition-transform duration-700 ease-in-out"
+          className={`flex ${isTransitioning ? 'transition-transform duration-700 ease-in-out' : ''}`}
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
-          {testimonials.map((item, index) => (
-            <div key={index} className="min-w-full px-4 md:px-8 py-4">
+          {extendedTestimonials.map((item, index) => (
+            <div
+              key={index}
+              className="min-w-full flex flex-col items-center justify-center text-center px-4 md:px-8 py-4 shrink-0"
+            >
               <div className="flex justify-center mb-4 text-yellow-400">
                 {[...Array(5)].map((_, i) => (
                   <FaStar key={i} />
                 ))}
               </div>
-              <p className="text-gray-600 text-lg leading-relaxed mb-6 min-h-[120px]">
+              <p className="text-gray-600 text-lg leading-relaxed mb-6 max-w-xl">
                 {item.text}
               </p>
               <h4 className="font-semibold text-gray-900 text-lg">{item.name}</h4>
             </div>
+
           ))}
         </div>
 
-        {/* Navigation */}
         <div className="mt-10 flex items-center justify-center gap-6">
           <button
             onClick={prevSlide}
@@ -85,7 +116,7 @@ const Feedback = () => {
           >
             <FaArrowLeft />
           </button>
-          <span className="text-sm text-gray-700">{`${current + 1} / ${total}`}</span>
+          <span className="text-sm text-gray-700">{`${(current % total) + 1} / ${total}`}</span>
           <button
             onClick={nextSlide}
             className="text-xl text-gray-800 hover:text-black transition-colors cursor-pointer"

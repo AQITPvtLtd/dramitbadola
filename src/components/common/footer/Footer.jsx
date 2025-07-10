@@ -63,7 +63,7 @@ const Footer = () => {
               <li className="flex items-start gap-3 mb-5">
                 <IoLocationSharp className="text-white text-4xl" />
                 <div className='hover:text-gray-300 cursor-pointer'>
-                  59/1, Race Course, Opp. UCO Bank, Dehradun (U.K) 248001
+                  59/1, Race Course, Opp. UCO Bank, Dehradun, Uttarakhand - 248001
                 </div>
               </li>
             </Link>

@@ -87,7 +87,7 @@ const Certificate = () => {
                     {/* Prev Arrow */}
                     <button
                         onClick={handlePrev}
-                        className="absolute left-4 text-white bg-black/50 hover:bg-black p-2 rounded-full text-xl z-50"
+                        className="absolute left-4 cursor-pointer text-white bg-black/50 hover:bg-black p-2 rounded-full text-xl z-50"
                     >
                         <FaChevronLeft />
                     </button>
@@ -104,7 +104,7 @@ const Certificate = () => {
                     {/* Next Arrow */}
                     <button
                         onClick={handleNext}
-                        className="absolute right-4 text-white bg-black/50 hover:bg-black p-2 rounded-full text-xl z-50"
+                        className="absolute right-4 cursor-pointer text-white bg-black/50 hover:bg-black p-2 rounded-full text-xl z-50"
                     >
                         <FaChevronRight />
                     </button>
