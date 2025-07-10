@@ -73,7 +73,7 @@ const Aboutus = () => {
                         <p className="text-md font-medium text-[#d0342c] mb-3">Medical Oncology, Cancer Care / Oncology,<br /> Bone Marrow Transplant</p>
                         <div className="h-[2px] w-20 bg-[#d0342c] mb-4"></div>
                         <p className="text-gray-700 text-base leading-relaxed">
-                            Dr. Amit Badola is a dedicated and highly experienced Medical Oncologist at Max Super Speciality Hospital. With a strong background in cancer treatment and a patient-first approach, he specializes in comprehensive cancer care including chemotherapy, targeted therapy, and immunotherapy. Dr. Badola is known for his compassionate care, evidence-based treatment plans, and commitment to improving patient outcomes.
+                            Dr. Amit Badola is a dedicated and highly experienced Medical Oncologist at Max Super Speciality Hospital in Dehradun. With a strong background in cancer treatment and a patient-first approach, he specializes in comprehensive cancer care including chemotherapy, targeted therapy, and immunotherapy. Dr. Badola is known for his compassionate care, evidence-based treatment plans, and commitment to improving patient outcomes.
                         </p>
                     </div>
                 </div>

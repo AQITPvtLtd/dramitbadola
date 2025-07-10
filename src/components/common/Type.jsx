@@ -6,7 +6,7 @@ import { data } from '@/data/typeofcancer';
 
 const Type = () => {
     return (
-        <div className="sticky top-52 right-10">
+        <div className="sticky top-32 right-10">
             <div className='px-5'>
                 <div className="shadow-2xl bg-white px-4 py-4 rounded-lg w-auto h-fit mt-10 lg:mt-0">
                     <h2 className="text-xl font-semibold mb-4 dark:text-black">Types of cancer</h2>

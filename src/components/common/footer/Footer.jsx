@@ -13,14 +13,14 @@ import { IoIosCall } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#d0342c] text-white pt-12 pb-4 px-6 md:px-12 lg:px-24">
+    <footer className="bg-[#d0342c] text-white pt-12 pb-4 px-6 md:px-12">
       <div className="grid md:grid-cols-4 gap-12 border-b border-white/10 pb-10">
         {/* Logo & Description */}
         <div>
           <Link href="/">
             <Image src='/logo/logo1.png' width={200} height={200} alt='Logo' className='w-52 h-auto' />
           </Link>
-          <p className='mt-5'>Dr. Amit Badola is a dedicated and highly experienced Medical Oncologist at Max Super Speciality Hospital.</p>
+          <p className='mt-5'>Dr. Amit Badola is a dedicated and highly experienced Medical Oncologist at Max Super Speciality Hospital in Dehradun.</p>
           <div className="flex gap-4 text-3xl text-white mt-5">
             <Link href="https://www.linkedin.com/in/dr-amit-badola-b41b772a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="__blank"><FaLinkedin className="hover:text-white cursor-pointer transition-transform duration-500 hover:scale-125" /></Link>
             <Link href="https://wa.me/919286471180" target="__blank"><FaWhatsapp className="hover:text-white cursor-pointer transition-transform duration-500 hover:scale-125" /></Link>
@@ -60,7 +60,7 @@ const Footer = () => {
           <h4 className="text-white font-semibold mb-4">Contact Us</h4>
           <ul className="space-y-4 text-sm text-white">
             <Link href="https://maps.app.goo.gl/72m8dfxNqBuJndLU7" target='_blank'>
-              <li className="flex items-start gap-3 mb-5">
+              <li className="flex items-start gap-2 mb-5">
                 <IoLocationSharp className="text-white text-4xl" />
                 <div className='hover:text-gray-300 cursor-pointer'>
                   59/1, Race Course, Opp. UCO Bank, Dehradun, Uttarakhand - 248001

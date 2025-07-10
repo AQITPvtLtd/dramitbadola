@@ -3,12 +3,14 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 import { navItems } from "./navItems"; // adjust path if needed
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [desktopDropdownOpen, setDesktopDropdownOpen] = useState(null);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(null);
+  const pathname = usePathname();
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -34,13 +36,15 @@ const Header = () => {
               {!item.dropdown ? (
                 <Link
                   href={item.href}
-                  className="transition-colors duration-200 hover:text-[#d0342c]"
+                  className={`transition-colors duration-200 hover:text-[#d0342c] ${pathname === item.href ? "text-[#d0342c]" : ""}`}
                 >
                   {item.label}
                 </Link>
               ) : (
                 <>
-                  <button className="flex items-center gap-1 px-2 py-1 cursor-pointer">
+                  <button
+                    className={`flex items-center gap-1 px-2 py-1 cursor-pointer ${item.dropdown.some(drop => drop.href === pathname) ? "text-[#d0342c]" : ""}`}
+                  >
                     {item.label}
                     <FaChevronDown className="text-sm mt-0.5" />
                   </button>
@@ -54,7 +58,8 @@ const Header = () => {
                       <Link
                         key={i}
                         href={dropItem.href}
-                        className="block px-4 py-2 rounded-md font-semibold text-black transition-colors duration-200 hover:bg-[#d0342c] hover:text-white"
+                        className={`block px-4 py-2 rounded-md font-semibold text-black transition-colors duration-200 hover:bg-[#d0342c] hover:text-white ${pathname === dropItem.href ? "bg-[#d0342c] text-white" : ""
+                          }`}
                       >
                         {dropItem.label}
                       </Link>
@@ -65,8 +70,6 @@ const Header = () => {
             </div>
           ))}
         </nav>
-
-
 
         {/* Right Side */}
         <div className="flex items-center gap-4">

@@ -11,7 +11,7 @@ const Lung = () => {
                     {/* Image Section */}
                     <div className="w-full max-w-8xl px-5 relative">
                         <Image
-                            src="/typeofcancer/lung.png"
+                            src="/typeofcancer/lung.avif"
                             width={1000}
                             height={500}
                             className="w-full lg:h-[300px] h-[200px] object-cover rounded-lg shadow-lg"
@@ -147,12 +147,10 @@ const Lung = () => {
                             </p>
                         </div>
 
-                        <div className="col-span-3 sticky top-20">
+                        <div className="col-span-3 sticky">
                             <Type />
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>

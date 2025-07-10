@@ -43,7 +43,7 @@ const Treatmentdata = ({ url }) => {
                     </div>
 
                     {/* Sidebar Section */}
-                    <div className="shadow-2xl sticky top-52 bg-white px-4 py-4 rounded-lg col-span-3 w-auto h-fit mt-10 lg:mt-0">
+                    <div className="shadow-2xl sticky top-40 bg-white px-4 py-4 rounded-lg col-span-3 w-auto h-fit mt-10 lg:mt-0">
                         <h2
                             className="text-xl font-semibold mb-4 dark:text-black"
                             style={{ fontFamily: "Roboto Slab, serif" }}
