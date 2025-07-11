@@ -20,7 +20,7 @@ const Brain = () => {
                     </div>
 
                     {/* Content Section */}
-                    <div className="lg:grid grid-cols-1 lg:grid-cols-12 gap-10 lg:mt-10 mt-4 w-full max-w-7xl">
+                    <div className="lg:grid grid-cols-1 lg:grid-cols-12 gap-10 lg:mt-10 mt-4 w-full max-w-7xl lg:px-10 px-4">
                         <div className="relative bg-white px-8 py-10 shadow-lg rounded-2xl col-span-9 lg:-mt-40">
                             <h1
                                 className="font-bold text-3xl md:text-4xl text-[#d0342c] underline mb-6 text-center"
@@ -39,7 +39,7 @@ const Brain = () => {
                                 Types of Brain Cancer
                             </h2>
                             <ol className="list-decimal list-inside">
-                                <li className="text-xl font-semibold text-gray-900 mt-8 mb-3">
+                                <li className="text-xl font-semibold text-gray-900 mb-3">
                                     Glioblastoma Multiforme (GBM)
                                 </li>
                                 <p className="text-gray-700 mb-3">
@@ -53,7 +53,7 @@ const Brain = () => {
                                     <li>Personality changes</li>
                                 </ul>
 
-                                <li className="text-xl font-bold text-gray-900 mt-8 mb-3">
+                                <li className="text-xl font-bold text-gray-900 mt-3 mb-3">
                                     Meningioma
                                 </li>
                                 <p className="text-gray-700 mb-3">
@@ -67,7 +67,7 @@ const Brain = () => {
                                     <li>Speech difficulties</li>
                                 </ul>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-8 mb-3">
+                                <li className="text-xl font-semibold text-gray-900 mt-3 mb-3">
                                     Medulloblastoma
                                 </li>
                                 <p className="text-gray-700 mb-3">
@@ -82,7 +82,7 @@ const Brain = () => {
                                 </ul>
                             </ol>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
                                 What Causes Brain Cancer?
                             </h2>
                             <p className="text-gray-700">
@@ -96,7 +96,7 @@ const Brain = () => {
                                 <li>Long-term exposure to carcinogenic chemicals</li>
                             </ul>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
                                 How is Brain Cancer Diagnosed?
                             </h2>
                             <p className="text-gray-700">
@@ -112,42 +112,42 @@ const Brain = () => {
                                 Early and precise diagnosis helps guide the most effective treatment plan.
                             </p>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-2">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-2">
                                 Treatment Options for Brain Cancer
                             </h2>
                             <p className="text-gray-700">
                                 Brain cancer treatment depends on the type, size, and location of the tumor. Common treatment options include:
                             </p>
                             <ol className="list-decimal list-inside">
-                                <li className="text-xl font-semibold text-gray-900 mt-2">
+                                <li className="text-lg font-semibold text-gray-900 mt-2">
                                     Surgery
                                 </li>
                                 <p className="text-gray-700">
                                     Removes as much of the tumor as possible without harming brain function.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">
+                                <li className="text-lg font-semibold text-gray-900 mt-2">
                                     Radiation Therapy
                                 </li>
                                 <p className="text-gray-700">
                                     High-energy beams target and kill remaining cancer cells after surgery.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">
+                                <li className="text-lg font-semibold text-gray-900 mt-2">
                                     Chemotherapy
                                 </li>
                                 <p className="text-gray-700">
                                     Uses anti-cancer drugs to destroy or stop the growth of cancer cells.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">
+                                <li className="text-lg font-semibold text-gray-900 mt-2">
                                     Targeted Therapy
                                 </li>
                                 <p className="text-gray-700">
                                     Attacks specific cancer cell genes or proteins to block growth.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">
+                                <li className="text-lg font-semibold text-gray-900 mt-2">
                                     Tumor Treating Fields (TTF)
                                 </li>
                                 <p className="text-gray-700 mb-5">
@@ -155,14 +155,14 @@ const Brain = () => {
                                 </p>
                             </ol>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-2 mb-2">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-2">
                                 Why Early Detection is Critical?
                             </h2>
                             <p className="text-gray-700 mb-5">
                                 Brain tumors can grow silently and only show symptoms once they affect critical functions. Early detection through imaging and medical evaluation ensures better prognosis, improved quality of life, and more effective treatments.
                             </p>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-2 mb-2">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-2">
                                 Support, Recovery & Life After Brain Cancer
                             </h2>
                             <p className="text-gray-700">
@@ -178,7 +178,7 @@ const Brain = () => {
                                 With personalized care and advances in treatment, many brain cancer patients can lead fulfilling lives.
                             </p>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
                                 Conclusion
                             </h2>
                             <p className="text-gray-700">

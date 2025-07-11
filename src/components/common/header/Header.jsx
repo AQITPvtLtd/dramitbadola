@@ -51,18 +51,21 @@ const Header = () => {
 
                   {/* Dropdown menu */}
                   <div
-                    className={`absolute left-0 top-full w-64 bg-white border rounded-xl shadow-lg p-2 transition-all duration-200 ${desktopDropdownOpen === index ? "block" : "hidden"
+                    className={`absolute left-0 top-full py-2 w-64 bg-white border rounded-xl shadow-lg px-2 transition-all duration-200 ${desktopDropdownOpen === index ? "block" : "hidden"
                       }`}
                   >
                     {item.dropdown.map((dropItem, i) => (
-                      <Link
-                        key={i}
-                        href={dropItem.href}
-                        className={`block px-4 py-2 rounded-md font-semibold text-black transition-colors duration-200 hover:bg-[#d0342c] hover:text-white ${pathname === dropItem.href ? "bg-[#d0342c] text-white" : ""
-                          }`}
-                      >
-                        {dropItem.label}
-                      </Link>
+                      <div className="py-0.5">
+                        <Link
+                          key={i}
+                          href={dropItem.href}
+                          className={`block px-4 py-2 gap-2 rounded-md font-semibold text-black transition-colors duration-200 hover:bg-[#d0342c] hover:text-white ${pathname === dropItem.href ? "bg-[#d0342c] text-white" : ""
+                            }`}
+                        >
+                          <div className="">
+                            {dropItem.label}</div>
+                        </Link>
+                      </div>
                     ))}
                   </div>
                 </>

@@ -20,10 +20,10 @@ const Breast = () => {
                     </div>
 
                     {/* Content Section */}
-                    <div className="lg:grid grid-cols-1 lg:grid-cols-12 gap-10 lg:mt-10 mt-4 w-full max-w-7xl">
+                    <div className="lg:grid grid-cols-1 lg:grid-cols-12 gap-10 lg:mt-10 mt-4 w-full max-w-7xl lg:px-8">
                         <div className="relative bg-white px-8 py-10 shadow-lg rounded-2xl col-span-9 lg:-mt-40">
                             <h1
-                                className="font-bold text-3xl md:text-4xl text-[#d0342c] underline mb-6 text-center"
+                                className="font-bold text-3xl text-[#d0342c] underline mb-6 text-center"
                                 style={{ fontFamily: "Roboto Slab, serif" }}
                             >
                                 Breast Cancer
@@ -35,11 +35,11 @@ const Breast = () => {
                             </p>
 
                             {/* Types of Breast Cancer */}
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
                                 Types of Breast Cancer
                             </h2>
                             <ol className="list-decimal list-inside">
-                                <li className="text-xl font-semibold text-gray-900 mt-8 mb-3">
+                                <li className="text-base font-semibold text-gray-900 mt-3 mb-3">
                                     Ductal Carcinoma in Situ (DCIS)
                                 </li>
                                 <p className="text-gray-700 mb-3">
@@ -51,7 +51,7 @@ const Breast = () => {
                                     <li>Possible lump or discharge</li>
                                 </ul>
 
-                                <li className="text-xl font-bold text-gray-900 mt-8 mb-3">
+                                <li className="text-base font-bold text-gray-900 mt-3 mb-3">
                                     Invasive Ductal Carcinoma (IDC)
                                 </li>
                                 <p className="text-gray-700 mb-3">
@@ -65,7 +65,7 @@ const Breast = () => {
                                     <li>Discharge or pain in the breast</li>
                                 </ul>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-8 mb-3">
+                                <li className="text-base font-semibold text-gray-900 mt-3 mb-3">
                                     Inflammatory Breast Cancer
                                 </li>
                                 <p className="text-gray-700 mb-3">
@@ -79,7 +79,7 @@ const Breast = () => {
                                 </ul>
                             </ol>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
                                 What Causes Breast Cancer?
                             </h2>
                             <p className="text-gray-700">
@@ -95,7 +95,7 @@ const Breast = () => {
                                 <li>Older age and early menstruation or late menopause</li>
                             </ul>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
                                 How is Breast Cancer Diagnosed?
                             </h2>
                             <p className="text-gray-700">
@@ -112,49 +112,49 @@ const Breast = () => {
                                 Early detection through regular screenings significantly improves treatment outcomes.
                             </p>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-2">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-2">
                                 Treatment Options for Breast Cancer
                             </h2>
                             <p className="text-gray-700">
                                 Treatment plans depend on cancer type, stage, and individual health. Common options include:
                             </p>
                             <ol className="list-decimal list-inside">
-                                <li className="text-xl font-semibold text-gray-900 mt-2">
+                                <li className="text-base font-semibold text-gray-900 mt-2">
                                     Surgery
                                 </li>
                                 <p className="text-gray-700">
                                     Includes lumpectomy (removal of the tumor) or mastectomy (removal of the entire breast).
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">
+                                <li className="text-base font-semibold text-gray-900 mt-2">
                                     Chemotherapy
                                 </li>
                                 <p className="text-gray-700">
                                     Uses drugs to destroy cancer cells throughout the body, especially if the cancer has spread.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">
+                                <li className="text-base font-semibold text-gray-900 mt-2">
                                     Radiation Therapy
                                 </li>
                                 <p className="text-gray-700">
                                     High-energy rays target cancer cells in a specific area, often used after surgery.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">
+                                <li className="text-base font-semibold text-gray-900 mt-2">
                                     Hormonal Therapy
                                 </li>
                                 <p className="text-gray-700">
                                     Blocks hormones like estrogen or progesterone that fuel certain types of breast cancer.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">
+                                <li className="text-base font-semibold text-gray-900 mt-2">
                                     Targeted Therapy
                                 </li>
                                 <p className="text-gray-700">
                                     Uses drugs that specifically target cancer cell proteins, such as HER2.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">
+                                <li className="text-base font-semibold text-gray-900 mt-2">
                                     Immunotherapy
                                 </li>
                                 <p className="text-gray-700 mb-5">
@@ -162,14 +162,14 @@ const Breast = () => {
                                 </p>
                             </ol>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-2 mb-2">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-2">
                                 Why Early Detection is Critical?
                             </h2>
                             <p className="text-gray-700 mb-5">
                                 Breast cancer often begins without noticeable symptoms. Regular screenings, self-exams, and awareness of changes in the body are key. Early detection leads to higher survival rates and more effective, less invasive treatment options.
                             </p>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-2 mb-2">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-2">
                                 Support, Recovery & Life After Breast Cancer
                             </h2>
                             <p className="text-gray-700">
@@ -185,7 +185,7 @@ const Breast = () => {
                                 With continued medical advances, many individuals go on to lead healthy, fulfilling lives after treatment.
                             </p>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
                                 Conclusion
                             </h2>
                             <p className="text-gray-700">

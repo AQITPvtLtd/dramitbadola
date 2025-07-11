@@ -20,10 +20,10 @@ const Colorectal = () => {
                     </div>
 
                     {/* Content Section */}
-                    <div className="lg:grid grid-cols-1 lg:grid-cols-12 gap-10 lg:mt-10 mt-4 w-full max-w-7xl">
+                    <div className="lg:grid grid-cols-1 lg:grid-cols-12 gap-10 lg:mt-10 mt-4 w-full max-w-7xl lg:px-8">
                         <div className="relative bg-white px-8 py-10 shadow-lg rounded-2xl col-span-9 lg:-mt-40">
                             <h1
-                                className="font-bold text-3xl md:text-4xl text-[#d0342c] underline mb-6 text-center"
+                                className="font-bold text-3xl text-[#d0342c] underline mb-6 text-center"
                                 style={{ fontFamily: 'Roboto Slab, serif' }}
                             >
                                 Colorectal Cancer
@@ -35,9 +35,9 @@ const Colorectal = () => {
                             </p>
 
                             {/* Types of Colorectal Cancer */}
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Types of Colorectal Cancer</h2>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">Types of Colorectal Cancer</h2>
                             <ol className="list-decimal list-inside">
-                                <li className="text-xl font-semibold text-gray-900 mt-8 mb-3">Adenocarcinoma</li>
+                                <li className="text-lg font-semibold text-gray-900 mb-3">Adenocarcinoma</li>
                                 <p className="text-gray-700 mb-3">
                                     The most common type of colorectal cancer, accounting for over 90% of cases. It begins in cells that produce mucus and line the colon and rectum.
                                 </p>
@@ -49,7 +49,7 @@ const Colorectal = () => {
                                     <li>Fatigue and weakness</li>
                                 </ul>
 
-                                <li className="text-xl font-bold text-gray-900 mt-8 mb-3">Gastrointestinal Stromal Tumors (GISTs)</li>
+                                <li className="text-lg font-bold text-gray-900 mt-3 mb-3">Gastrointestinal Stromal Tumors (GISTs)</li>
                                 <p className="text-gray-700 mb-3">
                                     Rare tumors that form in the connective tissue of the digestive tract, including the colon and rectum.
                                 </p>
@@ -60,7 +60,7 @@ const Colorectal = () => {
                                     <li>Nausea and vomiting</li>
                                 </ul>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-8 mb-3">Lymphoma</li>
+                                <li className="text-lg font-semibold text-gray-900 mt-3 mb-3">Lymphoma</li>
                                 <p className="text-gray-700 mb-3">
                                     Though rare, lymphoma can start in the colon or rectum, particularly in the immune system cells.
                                 </p>
@@ -72,7 +72,7 @@ const Colorectal = () => {
                                 </ul>
                             </ol>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">What Causes Colorectal Cancer?</h2>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">What Causes Colorectal Cancer?</h2>
                             <p className="text-gray-700">
                                 Colorectal cancer typically develops over time due to a mix of genetic and environmental factors. Common causes and risk factors include:
                             </p>
@@ -85,7 +85,7 @@ const Colorectal = () => {
                                 <li>Inherited syndromes (Lynch syndrome, FAP)</li>
                             </ul>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">How is Colorectal Cancer Diagnosed?</h2>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">How is Colorectal Cancer Diagnosed?</h2>
                             <p className="text-gray-700">
                                 Early diagnosis is essential and usually begins with screening. Common methods include:
                             </p>
@@ -100,43 +100,43 @@ const Colorectal = () => {
                                 Screening is recommended starting at age 45 or earlier if there is a family history or other risk factors.
                             </p>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-2">Treatment Options for Colorectal Cancer</h2>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-2">Treatment Options for Colorectal Cancer</h2>
                             <p className="text-gray-700">
                                 Treatment depends on the stage, location, and patient’s overall health. Common options include:
                             </p>
                             <ol className="list-decimal list-inside">
-                                <li className="text-xl font-semibold text-gray-900 mt-2">Surgery</li>
+                                <li className="text-lg font-semibold text-gray-900 mt-2">Surgery</li>
                                 <p className="text-gray-700">
                                     Removes cancerous tissue or part of the colon/rectum. May include a colostomy in some cases.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">Chemotherapy</li>
+                                <li className="text-lg font-semibold text-gray-900 mt-2">Chemotherapy</li>
                                 <p className="text-gray-700">
                                     Uses drugs to kill or stop the growth of cancer cells. Often used after surgery.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">Radiation Therapy</li>
+                                <li className="text-lg font-semibold text-gray-900 mt-2">Radiation Therapy</li>
                                 <p className="text-gray-700">
                                     Commonly used for rectal cancer to shrink tumors before surgery or relieve symptoms.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">Targeted Therapy</li>
+                                <li className="text-lg font-semibold text-gray-900 mt-2">Targeted Therapy</li>
                                 <p className="text-gray-700">
                                     Focuses on specific proteins or genetic mutations that help the cancer grow.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">Immunotherapy</li>
+                                <li className="text-lg font-semibold text-gray-900 mt-2">Immunotherapy</li>
                                 <p className="text-gray-700 mb-5">
                                     Helps the body’s immune system recognize and attack cancer cells, especially in cases with genetic instability.
                                 </p>
                             </ol>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-2 mb-2">Why Early Detection is Critical?</h2>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-2">Why Early Detection is Critical?</h2>
                             <p className="text-gray-700 mb-5">
                                 Colorectal cancer often develops slowly and can be prevented with regular screening. When caught early, treatment is more effective, less invasive, and has a higher success rate.
                             </p>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-2 mb-2">Support, Recovery & Life After Colorectal Cancer</h2>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-2">Support, Recovery & Life After Colorectal Cancer</h2>
                             <p className="text-gray-700">
                                 Recovery from colorectal cancer depends on the stage and treatment type. Ongoing care includes:
                             </p>
@@ -151,7 +151,7 @@ const Colorectal = () => {
                                 With early detection and a strong recovery plan, many patients live long, healthy lives after treatment.
                             </p>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Conclusion</h2>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">Conclusion</h2>
                             <p className="text-gray-700">
                                 Colorectal cancer is one of the most preventable and treatable cancers today. Through lifestyle changes, awareness, and routine screening, lives can be saved. Timely diagnosis and proper treatment make a significant difference in recovery and quality of life.
                             </p>

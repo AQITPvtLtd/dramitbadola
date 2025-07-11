@@ -20,10 +20,10 @@ const Cervical = () => {
                     </div>
 
                     {/* Content Section */}
-                    <div className="lg:grid grid-cols-1 lg:grid-cols-12 gap-10 lg:mt-10 mt-4 w-full max-w-7xl">
+                    <div className="lg:grid grid-cols-1 lg:grid-cols-12 gap-10 lg:mt-10 mt-4 w-full max-w-7xl lg:px-8">
                         <div className="relative bg-white px-8 py-10 shadow-lg rounded-2xl col-span-9 lg:-mt-40">
                             <h1
-                                className="font-bold text-3xl md:text-4xl text-[#d0342c] underline mb-6 text-center"
+                                className="font-bold text-3xl text-[#d0342c] underline mb-6 text-center"
                                 style={{ fontFamily: "Roboto Slab, serif" }}
                             >
                                 Cervical Cancer
@@ -35,11 +35,11 @@ const Cervical = () => {
                             </p>
 
                             {/* Types of Cervical Cancer */}
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
                                 Types of Cervical Cancer
                             </h2>
                             <ol className="list-decimal list-inside">
-                                <li className="text-xl font-semibold text-gray-900 mt-8 mb-3">
+                                <li className="text-lg font-semibold text-gray-900 mt-3 mb-3">
                                     Squamous Cell Carcinoma
                                 </li>
                                 <p className="text-gray-700 mb-3">
@@ -52,7 +52,7 @@ const Cervical = () => {
                                     <li>Watery or foul-smelling vaginal discharge</li>
                                 </ul>
 
-                                <li className="text-xl font-bold text-gray-900 mt-8 mb-3">
+                                <li className="text-lg font-bold text-gray-900 mt-3 mb-3">
                                     Adenocarcinoma
                                 </li>
                                 <p className="text-gray-700 mb-3">
@@ -66,7 +66,7 @@ const Cervical = () => {
                                 </ul>
                             </ol>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
                                 What Causes Cervical Cancer?
                             </h2>
                             <p className="text-gray-700">
@@ -81,7 +81,7 @@ const Cervical = () => {
                                 <li>Lack of regular Pap or HPV testing</li>
                             </ul>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
                                 How is Cervical Cancer Diagnosed?
                             </h2>
                             <p className="text-gray-700">
@@ -98,42 +98,42 @@ const Cervical = () => {
                                 Regular cervical screening is the most effective way to prevent cervical cancer.
                             </p>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-2">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-2">
                                 Treatment Options for Cervical Cancer
                             </h2>
                             <p className="text-gray-700">
                                 The treatment of cervical cancer depends on the stage and the patient’s overall health. Common treatment options include:
                             </p>
                             <ol className="list-decimal list-inside">
-                                <li className="text-xl font-semibold text-gray-900 mt-2">
+                                <li className="text-lg font-semibold text-gray-900 mt-2">
                                     Surgery
                                 </li>
                                 <p className="text-gray-700">
                                     May involve removal of the cancerous tissue, cervix, or uterus (hysterectomy), especially in early stages.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">
+                                <li className="text-lg font-semibold text-gray-900 mt-2">
                                     Radiation Therapy
                                 </li>
                                 <p className="text-gray-700">
                                     High-energy rays are used to destroy cancer cells or shrink tumors.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">
+                                <li className="text-lg font-semibold text-gray-900 mt-2">
                                     Chemotherapy
                                 </li>
                                 <p className="text-gray-700">
                                     Drugs are administered to kill cancer cells, often used in advanced stages or with radiation.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">
+                                <li className="text-lg font-semibold text-gray-900 mt-2">
                                     Targeted Therapy
                                 </li>
                                 <p className="text-gray-700">
                                     Focuses on specific proteins or genes that help cancer grow, often combined with other treatments.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">
+                                <li className="text-lg font-semibold text-gray-900 mt-2">
                                     Immunotherapy
                                 </li>
                                 <p className="text-gray-700 mb-5">
@@ -141,14 +141,14 @@ const Cervical = () => {
                                 </p>
                             </ol>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-2 mb-2">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-2">
                                 Why Early Detection is Critical?
                             </h2>
                             <p className="text-gray-700 mb-5">
                                 Cervical cancer is highly preventable and treatable when detected early. Regular Pap tests, HPV vaccination, and timely follow-ups reduce the risk of invasive cancer and improve survival rates significantly.
                             </p>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-2 mb-2">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-2">
                                 Support, Recovery & Life After Cervical Cancer
                             </h2>
                             <p className="text-gray-700">
@@ -165,7 +165,7 @@ const Cervical = () => {
                                 Many women go on to live healthy, active lives after treatment with regular medical care and personal support systems.
                             </p>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">
                                 Conclusion
                             </h2>
                             <p className="text-gray-700">

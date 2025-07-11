@@ -20,10 +20,10 @@ const Prosate = () => {
                     </div>
 
                     {/* Content Section */}
-                    <div className="lg:grid grid-cols-1 lg:grid-cols-12 gap-10 lg:mt-10 mt-4 w-full max-w-7xl">
+                    <div className="lg:grid grid-cols-1 lg:grid-cols-12 gap-10 lg:mt-10 mt-4 w-full max-w-7xl lg:px-8">
                         <div className="relative bg-white px-8 py-10 shadow-lg rounded-2xl col-span-9 lg:-mt-40">
                             <h1
-                                className="font-bold text-3xl md:text-4xl text-[#d0342c] underline mb-6 text-center"
+                                className="font-bold text-3xl text-[#d0342c] underline mb-6 text-center"
                                 style={{ fontFamily: 'Roboto Slab, serif' }}
                             >
                                 Prostate Cancer
@@ -37,7 +37,7 @@ const Prosate = () => {
                             {/* Types of Prostate Cancer */}
                             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Types of Prostate Cancer</h2>
                             <ol className="list-decimal list-inside">
-                                <li className="text-xl font-semibold text-gray-900 mt-8 mb-3">Adenocarcinoma</li>
+                                <li className="text-lg font-semibold text-gray-900 mb-3">Adenocarcinoma</li>
                                 <p className="text-gray-700 mb-3">
                                     The most common type of prostate cancer, adenocarcinoma begins in the gland cells of the prostate. It usually grows slowly but can become aggressive in advanced stages.
                                 </p>
@@ -49,7 +49,7 @@ const Prosate = () => {
                                     <li>Erectile dysfunction</li>
                                 </ul>
 
-                                <li className="text-xl font-bold text-gray-900 mt-8 mb-3">Small Cell Carcinoma</li>
+                                <li className="text-lg font-bold text-gray-900 mt-3 mb-3">Small Cell Carcinoma</li>
                                 <p className="text-gray-700 mb-3">
                                     A rare and aggressive form of prostate cancer that doesn’t produce PSA and spreads quickly to other parts of the body.
                                 </p>
@@ -62,7 +62,7 @@ const Prosate = () => {
                                 </ul>
                             </ol>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">What Causes Prostate Cancer?</h2>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">What Causes Prostate Cancer?</h2>
                             <p className="text-gray-700">
                                 The exact cause of prostate cancer is unknown, but certain risk factors are known to contribute:
                             </p>
@@ -75,7 +75,7 @@ const Prosate = () => {
                                 <li>Ethnicity (more common in African-American men)</li>
                             </ul>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">How is Prostate Cancer Diagnosed?</h2>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">How is Prostate Cancer Diagnosed?</h2>
                             <p className="text-gray-700">
                                 Diagnosis typically involves a combination of screening tests and imaging:
                             </p>
@@ -90,43 +90,43 @@ const Prosate = () => {
                                 Regular screening is crucial, especially for men with high risk factors.
                             </p>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-2">Treatment Options for Prostate Cancer</h2>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-2">Treatment Options for Prostate Cancer</h2>
                             <p className="text-gray-700">
                                 Treatment varies depending on the cancer’s stage, grade, and patient health. Options include:
                             </p>
                             <ol className="list-decimal list-inside">
-                                <li className="text-xl font-semibold text-gray-900 mt-2">Active Surveillance</li>
+                                <li className="text-lg font-semibold text-gray-900 mt-2">Active Surveillance</li>
                                 <p className="text-gray-700">
                                     Monitoring the cancer closely in cases where it's slow-growing and not causing symptoms.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">Surgery (Prostatectomy)</li>
+                                <li className="text-lg font-semibold text-gray-900 mt-2">Surgery (Prostatectomy)</li>
                                 <p className="text-gray-700">
                                     Removal of the prostate gland, often recommended in early stages for healthy patients.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">Radiation Therapy</li>
+                                <li className="text-lg font-semibold text-gray-900 mt-2">Radiation Therapy</li>
                                 <p className="text-gray-700">
                                     High-energy beams destroy cancer cells. Can be external or internal (brachytherapy).
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">Hormone Therapy</li>
+                                <li className="text-lg font-semibold text-gray-900 mt-2">Hormone Therapy</li>
                                 <p className="text-gray-700">
                                     Reduces testosterone levels, which fuels prostate cancer growth.
                                 </p>
 
-                                <li className="text-xl font-semibold text-gray-900 mt-2">Chemotherapy</li>
+                                <li className="text-lg font-semibold text-gray-900 mt-2">Chemotherapy</li>
                                 <p className="text-gray-700 mb-5">
                                     Used in advanced or hormone-resistant cancers to kill cancer cells systemically.
                                 </p>
                             </ol>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-2 mb-2">Why Early Detection is Critical?</h2>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-2">Why Early Detection is Critical?</h2>
                             <p className="text-gray-700 mb-5">
                                 Prostate cancer often progresses silently in its early stages. Regular screening allows for early detection, when treatment is most effective and minimally invasive. Delayed diagnosis can reduce survival chances and limit treatment options.
                             </p>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-2 mb-2">Support, Recovery & Life After Prostate Cancer</h2>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-2">Support, Recovery & Life After Prostate Cancer</h2>
                             <p className="text-gray-700">
                                 Recovery from prostate cancer is a long-term process involving:
                             </p>
@@ -141,7 +141,7 @@ const Prosate = () => {
                                 Most men recover well after treatment and lead healthy, active lives with appropriate lifestyle modifications and monitoring.
                             </p>
 
-                            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Conclusion</h2>
+                            <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-3">Conclusion</h2>
                             <p className="text-gray-700">
                                 Prostate cancer is highly treatable when detected early. Men over 50, especially those at higher risk, should undergo regular screenings. With the right treatment and support, many men recover fully and continue to live a high-quality life.
                             </p>
