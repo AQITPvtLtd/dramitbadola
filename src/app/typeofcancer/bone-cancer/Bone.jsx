@@ -9,7 +9,7 @@ const Bone = () => {
             <div className="mx-auto py-12 bg-[#f2efef]">
                 <div className="flex flex-col items-center">
                     {/* Image Section */}
-                    <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+                    <div className="w-full max-w-7xl px-4 relative">
                         <Image
                             src="/typeofcancer/bone.png"
                             width={1000}
@@ -22,7 +22,7 @@ const Bone = () => {
                     {/* Content Section */}
                     <div className="lg:grid grid-cols-1 lg:grid-cols-12 gap-10 mt-8 w-full max-w-7xl px-4 sm:px-6 lg:px-8">
                         {/* Main Content */}
-                        <div className="relative bg-white px-6 sm:px-10 py-10 shadow-xl rounded-3xl col-span-9">
+                        <div className="relative bg-white px-6 sm:px-10 py-10 shadow-xl rounded-3xl col-span-9 lg:-mt-40">
                             <h1 className="font-bold text-3xl text-[#d0342c] underline mb-6 text-center font-serif">
                                 Bone Cancer
                             </h1>
