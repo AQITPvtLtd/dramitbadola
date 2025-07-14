@@ -27,18 +27,17 @@ const Blog = () => {
   return (
     <div className="lg:p-10 overflow-x-clip px-4 bg-[#f2efef]">
       <div className="pt-5 text-center">
-        <h1 className="text-3xl font-bold dark:text-black">Latest Blogs</h1>
-        <p className="text-lg dark:text-black">Read our latest blog.</p>
+        <h1 className="text-3xl font-bold dark:text-black" style={{ fontFamily: "Roboto Slab, serif" }}>Read our latest blogs</h1>
       </div>
 
       {blog.length === 0 ? (
         <p className="text-center text-gray-500">No blogs available.</p>
       ) : (
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 py-6">
           {blog.map((b) => (
             <Link
               key={b.id}
-              href={`/blogs/${b.id}/${b.url}`}
+              href={`/blogs/${b.url}`}
               className="bg-white shadow-xl rounded-4xl overflow-hidden hover:shadow-2xl transition-transform transform hover:scale-105 duration-300"
             >
               <Image

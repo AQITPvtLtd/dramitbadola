@@ -6,7 +6,7 @@ import moment from "moment";
 import Image from 'next/image';
 import { FaUser } from "react-icons/fa";
 
-const DetailedBlog = ({ id, url }) => {
+const DetailedBlog = ({ url }) => {
 
     const [blog, setBlog] = useState(null);
     useEffect(
@@ -19,7 +19,7 @@ const DetailedBlog = ({ id, url }) => {
         }, []
     );
 
-    const blogDetail = blog?.find((b) => b.id == id && b.url == url);
+    const blogDetail = blog?.find((b) => b.url == url);
 
     return (
         <section className="overflow-hidden pt-10 lg:px-14 px-3 bg-[#f2efef]">
