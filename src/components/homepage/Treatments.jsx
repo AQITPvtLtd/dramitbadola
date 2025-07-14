@@ -38,7 +38,7 @@ const Treatments = () => {
     };
 
     return (
-        <div className="px-4 py-10 bg-[#f2efef]">
+        <div className="px-4 lg:py-10 bg-[#f2efef]">
             <h1 className="text-center font-bold text-3xl md:text-4xl text-gray-800 pb-8" style={{ fontFamily: "Roboto Slab, serif" }}>
                 Our Treatments
             </h1>

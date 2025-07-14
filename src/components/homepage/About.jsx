@@ -57,7 +57,7 @@ const About = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-12 px-4 md:px-12 lg:px-24 bg-[#f2efef]"
+      className="py-12 px-4 md:px-12 bg-[#f2efef]"
     >
       <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-10">
         {/* Image */}

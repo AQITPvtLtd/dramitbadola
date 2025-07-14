@@ -34,14 +34,27 @@ const Feedback = () => {
   const [isTransitioning, setIsTransitioning] = useState(true);
   const total = testimonials.length;
   const sliderRef = useRef(null);
+  const intervalRef = useRef(null);
 
-  const extendedTestimonials = [...testimonials, testimonials[0]]; // 👈 add first slide at end
+  const extendedTestimonials = [...testimonials, testimonials[0]];
+
+  const startAutoSlide = () => {
+    intervalRef.current = setInterval(() => {
+      nextSlide();
+    }, 5000);
+  };
+
+  const resetAutoSlide = () => {
+    clearInterval(intervalRef.current);
+    startAutoSlide();
+  };
 
   const nextSlide = () => {
     setCurrent((prev) => prev + 1);
   };
 
   const prevSlide = () => {
+    resetAutoSlide();
     if (current === 0) {
       setIsTransitioning(false);
       setCurrent(total);
@@ -54,22 +67,17 @@ const Feedback = () => {
     }
   };
 
-  // Auto Slide
   useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 5000);
-    return () => clearInterval(interval);
+    startAutoSlide();
+    return () => clearInterval(intervalRef.current);
   }, []);
 
-  // Reset to real first slide without animation
   useEffect(() => {
     if (current === total) {
       setTimeout(() => {
         setIsTransitioning(false);
         setCurrent(0);
-      }, 700); // match transition duration
-
+      }, 700);
       setTimeout(() => {
         setIsTransitioning(true);
       }, 750);
@@ -77,13 +85,13 @@ const Feedback = () => {
   }, [current]);
 
   return (
-    <section className="pb-5 px-6 md:px-12 lg:px-24 bg-[#f2efef] text-center overflow-hidden">
+    <section className="pb-10 px-4 sm:px-6 md:px-12 lg:px-24 bg-[#f2efef] text-center overflow-hidden">
       <p className="text-[#d0342c] font-medium mb-2">Testimonials</p>
-      <h2 className="text-4xl font-bold text-gray-900 mb-10" style={{ fontFamily: 'Roboto Slab, serif' }}>
-        Patients Feedback & <br /> Comments.
+      <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 lg:mb-10" style={{ fontFamily: 'Roboto Slab, serif' }}>
+        Patients Feedback & <br className="hidden sm:block" /> Comments.
       </h2>
 
-      <div className="relative max-w-3xl mx-auto overflow-hidden">
+      <div className="relative w-full max-w-3xl mx-auto overflow-hidden">
         <div
           ref={sliderRef}
           className={`flex ${isTransitioning ? 'transition-transform duration-700 ease-in-out' : ''}`}
@@ -92,34 +100,36 @@ const Feedback = () => {
           {extendedTestimonials.map((item, index) => (
             <div
               key={index}
-              className="min-w-full flex flex-col items-center justify-center text-center px-4 md:px-8 py-4 shrink-0"
+              className="w-full flex-shrink-0 flex flex-col items-center justify-center text-center px-4 sm:px-6 md:px-8 py-6"
             >
-              <div className="flex justify-center mb-4 text-yellow-400">
+              <div className="flex justify-center mb-3 text-yellow-400">
                 {[...Array(5)].map((_, i) => (
                   <FaStar key={i} />
                 ))}
               </div>
-              <p className="text-gray-600 text-lg leading-relaxed mb-6 max-w-xl">
+              <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4 max-w-xs sm:max-w-md md:max-w-xl">
                 {item.text}
               </p>
-              <h4 className="font-semibold text-gray-900 text-lg">{item.name}</h4>
+              <h4 className="font-semibold text-gray-900 text-base sm:text-lg">{item.name}</h4>
             </div>
-
           ))}
         </div>
 
-        <div className="mt-10 flex items-center justify-center gap-6">
+        <div className="lg:mt-8 flex items-center justify-center gap-6">
           <button
             onClick={prevSlide}
-            className="text-xl text-gray-800 hover:text-black transition-colors cursor-pointer"
+            className="text-xl text-gray-800 hover:text-black transition-colors"
             aria-label="Previous"
           >
             <FaArrowLeft />
           </button>
           <span className="text-sm text-gray-700">{`${(current % total) + 1} / ${total}`}</span>
           <button
-            onClick={nextSlide}
-            className="text-xl text-gray-800 hover:text-black transition-colors cursor-pointer"
+            onClick={() => {
+              resetAutoSlide();
+              nextSlide();
+            }}
+            className="text-xl text-gray-800 hover:text-black transition-colors"
             aria-label="Next"
           >
             <FaArrowRight />

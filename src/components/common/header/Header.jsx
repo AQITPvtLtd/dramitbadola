@@ -55,18 +55,16 @@ const Header = () => {
                       }`}
                   >
                     {item.dropdown.map((dropItem, i) => (
-                      <div className="py-0.5">
+                      <div key={i} className="py-0.5">
                         <Link
-                          key={i}
                           href={dropItem.href}
-                          className={`block px-4 py-2 gap-2 rounded-md font-semibold text-black transition-colors duration-200 hover:bg-[#d0342c] hover:text-white ${pathname === dropItem.href ? "bg-[#d0342c] text-white" : ""
-                            }`}
+                          className={`block px-4 py-2 gap-2 rounded-md font-semibold text-black transition-colors duration-200 hover:bg-[#d0342c] hover:text-white ${pathname === dropItem.href ? "bg-[#d0342c] text-white" : ""}`}
                         >
-                          <div className="">
-                            {dropItem.label}</div>
+                          <div>{dropItem.label}</div>
                         </Link>
                       </div>
                     ))}
+
                   </div>
                 </>
               )}
