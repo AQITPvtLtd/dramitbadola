@@ -24,7 +24,7 @@ const Contact = () => {
                 scrollTrigger: {
                     trigger: sectionRef.current,
                     start: "top 80%",
-                    toggleActions: "play none none reset", // repeat on scroll
+                    toggleActions: "play none none reset",
                 },
             });
         }, sectionRef);
@@ -37,65 +37,71 @@ const Contact = () => {
             ref={sectionRef}
             className="py-16 px-4 md:px-12 lg:px-24 bg-[#f2efef] text-center"
         >
-            <p className="text-3xl text-[#d0342c] font-semibold uppercase mb-10" style={{ fontFamily: "Roboto Slab, serif" }}>
+            <p className="text-3xl text-[#d0342c] font-semibold uppercase mb-12" style={{ fontFamily: "Roboto Slab, serif" }}>
                 Get in Touch With Us
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-gray-700">
-                {/* Head Office */}
-                <Link href="https://maps.app.goo.gl/72m8dfxNqBuJndLU7" target='_blank'>
-                    <div ref={(el) => (cardsRef.current[0] = el)}>
+                {/* Location */}
+                <Link href="https://maps.app.goo.gl/72m8dfxNqBuJndLU7" target="_blank">
+                    <div ref={(el) => (cardsRef.current[0] = el)} className="text-left px-4">
                         <div className="flex justify-center mb-4">
                             <FaMapMarkerAlt className="text-[#d0342c] text-2xl" />
                         </div>
-                        <h3 className="text-lg font-semibold mb-2">Location</h3>
-                        <p>
-                            59/1, Race Course, Opp. UCO Bank, Dehradun, Uttarakhand - 248001
+                        <h3 className="text-lg font-semibold mb-2 text-center">Location</h3>
+                        <p className="text-sm leading-relaxed text-center">
+                            59/1, Race Course,<br />
+                            Opp. UCO Bank,<br />
+                            Dehradun, Uttarakhand – 248001
                         </p>
                     </div>
                 </Link>
 
-                {/* Email Support */}
-                <Link href="mailto:dramitoncology@gmail.com" target='_blank'>
-                    <div ref={(el) => (cardsRef.current[1] = el)}>
+                {/* Email */}
+                <Link href="mailto:dramitoncology@gmail.com" target="_blank">
+                    <div ref={(el) => (cardsRef.current[1] = el)} className="text-left px-4">
                         <div className="flex justify-center mb-4">
                             <FaEnvelope className="text-[#d0342c] text-2xl" />
                         </div>
-                        <h3 className="text-lg font-semibold mb-2">Email Support</h3>
-                        <p>
-                            dramitoncology@gmail.com
-                        </p>
+                        <h3 className="text-lg font-semibold mb-2 text-center">Email Support</h3>
+                        <p className="text-sm break-all text-center">dramitoncology@gmail.com</p>
                     </div>
                 </Link>
 
-                {/* Let's Talk */}
-                <Link href="tel:9286471180" target='_blank'>
-                    <div ref={(el) => (cardsRef.current[2] = el)}>
+                {/* Phone */}
+                <Link href="tel:9286471180" target="_blank">
+                    <div ref={(el) => (cardsRef.current[2] = el)} className="text-left px-4">
                         <div className="flex justify-center mb-4">
                             <FaPhoneAlt className="text-[#d0342c] text-2xl" />
                         </div>
-                        <h3 className="text-lg font-semibold mb-2">Let's Talk</h3>
-                        <p>
-                            Phone : +91 92864 71180
-                        </p>
+                        <h3 className="text-lg font-semibold mb-2 text-center">Let's Talk</h3>
+                        <p className="text-sm text-center">+91 92864 71180</p>
                     </div>
                 </Link>
 
-                {/* Office Hour */}
-                <div ref={(el) => (cardsRef.current[3] = el)}>
+                {/* Timing */}
+                <div ref={(el) => (cardsRef.current[3] = el)} className="text-left px-4">
                     <div className="flex justify-center mb-4">
                         <FaClock className="text-[#d0342c] text-2xl" />
                     </div>
-                    <h3 className="text-lg font-semibold mb-2">Timing Schedule</h3>
-                    <p>
-                        Tuesday - Thursday - Friday
-                        <br />
+                    <h3 className="text-lg font-semibold mb-2 text-center">Timing Schedule</h3>
+                    <p className="text-sm leading-relaxed text-center">
+                        <strong>Max Hospital Dheradun <br /> (Mon - Sat)</strong><br />
+                        9:00 AM to 4:00 PM
+                    </p>
+                    <p className="text-sm leading-relaxed text-center mt-4">
+                        <strong>Dwarka Clinics (Mon - Fri)</strong><br />
+                        Race Course Rd, East Rest Camp,<br />
+                        Guru Nanak Vihar, Dehradun – 248001<br />
                         5:00 PM to 7:00 PM
                     </p>
                 </div>
             </div>
 
-            <Form />
+            {/* Contact Form */}
+            <div className="mt-16">
+                <Form />
+            </div>
         </section>
     );
 };

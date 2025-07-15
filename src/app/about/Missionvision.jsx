@@ -55,7 +55,7 @@ const Missionvision = () => {
               <span className="text-[#d0342c]">Mission</span>
             </h3>
             <p className="text-gray-700 mt-2 leading-relaxed">
-              To deliver compassionate, personalized, and evidence-based care for patients with blood cancers and disorders. We strive to combine medical excellence with empathy, ensuring timely diagnosis, advanced treatment, and holistic support for every individual and their family throughout their journey.
+              To deliver compassionate, personalized, and evidence-based care for patients cancer. We strive to combine medical excellence with empathy, ensuring timely diagnosis, advanced treatment, and holistic support for every individual and their family throughout their journey.
             </p>
           </div>
         </div>
@@ -74,7 +74,7 @@ const Missionvision = () => {
               <span className="text-[#d0342c]">Vision</span>
             </h3>
             <p className="text-gray-700 mt-2 leading-relaxed">
-              To become a trusted leader in hemato-oncology care by offering innovative, patient-centric solutions. We aim to create a future where blood cancers are detected early, treated effectively, and every patient receives care with dignity, hope, and confidence.
+              To become a trusted leader in medical and hemato-oncology care by offering innovative, patient-centric solutions. We aim to create a future where blood cancers are detected early, treated effectively, and every patient receives care with dignity, hope, and confidence.
             </p>
           </div>
         </div>

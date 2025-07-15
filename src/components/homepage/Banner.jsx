@@ -69,7 +69,7 @@ const Banner = () => {
         </h2>
 
         <p className="anim-item text-lg sm:text-xl text-gray-100 mt-4 max-w-xl leading-relaxed">
-          Expert in Medical Oncology, Cancer Care, and Bone Marrow Transplantation.
+          Expert in Medical Oncology, Hemato oncology and Cancer Care.
         </p>
 
         <div className="anim-item mt-8 flex flex-col sm:flex-row gap-4">
