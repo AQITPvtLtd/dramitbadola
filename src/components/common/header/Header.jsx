@@ -20,7 +20,7 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <Link href="/">
-            <Image src="/logo/logo.png" alt="Logo" width={200} height={200} />
+            <Image src="/logo/logo.png" alt="Logo" width={300} height={300} />
           </Link>
         </div>
 

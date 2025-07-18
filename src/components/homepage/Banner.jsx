@@ -55,7 +55,7 @@ const Banner = () => {
         className="relative z-20 h-full flex flex-col justify-center items-start px-6 sm:px-12 lg:px-24 max-w-4xl"
       >
         <h1
-          className="anim-item text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white"
+          className="anim-item text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mt-16"
           style={{ fontFamily: "Roboto Slab, serif" }}
         >
           Dr. Amit Badola

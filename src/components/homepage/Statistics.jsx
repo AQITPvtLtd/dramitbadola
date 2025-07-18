@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useInView } from "framer-motion";
 
 const stats = [
-  { number: 10000, label: "Happy Patients" },
+  { number: 5000, label: "Happy Patients" },
   { number: 1000, label: "Immunotherapy + Targeted Therapy" },
   { number: 5, label: "Years of Experience" },
 ];
