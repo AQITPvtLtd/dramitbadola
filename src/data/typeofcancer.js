@@ -52,4 +52,9 @@ export const data = [{
     title: "Oesophagus and Stomach Cancer",
     path: "/typeofcancer/oesophagus-and-stomach-cancer",
 },
+{
+    id: 12,
+    title: "Hepatobiliary Cancers",
+    path: "/typeofcancer/hepatobiliary-cancers",
+},
 ]

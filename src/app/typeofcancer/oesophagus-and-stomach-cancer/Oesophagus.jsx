@@ -7,9 +7,9 @@ const Oesophagus = () => {
             <div className="mx-auto py-12 bg-[#f2efef]">
                 <div className="flex flex-col items-center">
                     {/* Image Section */}
-                    <div className="w-full max-w-8xl px-5 relative">
+                    <div className="w-full max-w-8xl px-5 relative mt-20">
                         <Image
-                            src="/typeofcancer/blood.png"
+                            src="/typeofcancer/stomach1.avif"
                             width={1000}
                             height={500}
                             className="w-full lg:h-[300px] h-[200px] object-cover rounded-lg shadow-lg"
