@@ -17,6 +17,8 @@ export const navItems = [
       { label: "Lung Cancer", href: "/typeofcancer/lung-cancer" },
       { label: "Mouth and Oral Cancer", href: "/typeofcancer/mouth-cancer" },
       { label: "Prostate Cancer", href: "/typeofcancer/prostate-cancer" },
+      { label: "Head and Neck Cancer", href: "/typeofcancer/head-and-neck-cancer" },
+      { label: "Oesophagus and Stomach Cancer", href: "/typeofcancer/oesophagus-and-stomach-cancer" },
     ],
   },
   { label: "Blogs", href: "/blogs" },

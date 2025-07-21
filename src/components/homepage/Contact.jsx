@@ -41,18 +41,17 @@ const Contact = () => {
                 Get in Touch With Us
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-gray-700">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 text-gray-700">
                 {/* Location */}
-                <Link href="https://maps.app.goo.gl/72m8dfxNqBuJndLU7" target="_blank">
+                <Link href="/" target="_blank">
                     <div ref={(el) => (cardsRef.current[0] = el)} className="text-left px-4">
                         <div className="flex justify-center mb-4">
                             <FaMapMarkerAlt className="text-[#d0342c] text-2xl" />
                         </div>
                         <h3 className="text-lg font-semibold mb-2 text-center">Location</h3>
                         <p className="text-sm leading-relaxed text-center">
-                            59/1, Race Course,<br />
-                            Opp. UCO Bank,<br />
-                            Dehradun, Uttarakhand – 248001
+                            Race Course Rd, East Rest Camp,<br />
+                            Guru Nanak Vihar, Dehradun – 248001
                         </p>
                     </div>
                 </Link>
@@ -89,12 +88,14 @@ const Contact = () => {
                         <strong>Max Hospital Dheradun <br /> (Mon - Sat)</strong><br />
                         9:00 AM to 4:00 PM
                     </p>
-                    <p className="text-sm leading-relaxed text-center mt-4">
-                        <strong>Dwarka Clinics (Mon - Fri)</strong><br />
-                        Race Course Rd, East Rest Camp,<br />
-                        Guru Nanak Vihar, Dehradun – 248001<br />
-                        5:00 PM to 7:00 PM
-                    </p>
+                    <Link href="https://maps.app.goo.gl/6fgKqKj6GT4LJhW27" target="__black">
+                        <p className="text-sm leading-relaxed text-center mt-4">
+                            <strong>Dwarka Clinics (Mon - Fri)</strong><br />
+                            Race Course Rd, East Rest Camp,<br />
+                            Guru Nanak Vihar, Dehradun – 248001<br />
+                            5:00 PM to 7:00 PM
+                        </p>
+                    </Link>
                 </div>
             </div>
 
