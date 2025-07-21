@@ -42,4 +42,14 @@ export const data = [{
     title: "Prostate Cancer",
     path: "/typeofcancer/prostate-cancer",
 },
+{
+    id: 10,
+    title: "Head and Neck Cancer",
+    path: "/typeofcancer/head-and-neck-cancer",
+},
+{
+    id: 11,
+    title: "Oesophagus and Stomach Cancer",
+    path: "/typeofcancer/oesophagus-and-stomach-cancer",
+},
 ]
