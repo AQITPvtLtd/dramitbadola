@@ -57,4 +57,14 @@ export const data = [{
     title: "Hepatobiliary Cancers",
     path: "/typeofcancer/hepatobiliary-cancers",
 },
+{
+    id: 13,
+    title: "Neuroendocrine Tumours",
+    path: "/typeofcancer/neuroendocrine-tumours",
+},
+{
+    id: 14,
+    title: "Sarcoma",
+    path: "/typeofcancer/sarcoma",
+},
 ]
