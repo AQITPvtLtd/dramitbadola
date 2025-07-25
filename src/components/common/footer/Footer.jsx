@@ -60,7 +60,7 @@ const Footer = () => {
           <h4 className="text-white font-semibold mb-4">Contact Us</h4>
           <ul className="space-y-4 text-sm text-white">
             <Link href="https://maps.app.goo.gl/72m8dfxNqBuJndLU7" target='_blank'>
-              <li className="flex items-start gap-2 mb-5">
+              <li className="flex items-start gap-3 mb-5">
                 <IoLocationSharp className="text-white text-4xl" />
                 <div className='hover:text-gray-300 cursor-pointer'>
                   59/1, Race Course, Opp. UCO Bank, Dehradun, Uttarakhand - 248001
@@ -69,7 +69,7 @@ const Footer = () => {
             </Link>
             <Link href="tel:9286471180" target='_blank'>
               <li className="flex items-start gap-3 mb-5">
-                <IoIosCall className="text-white text-2xl" />
+                <IoIosCall className="text-white text-xl" />
                 <div className='hover:text-gray-300 cursor-pointer'>
                   +91 92864 71180
                 </div>

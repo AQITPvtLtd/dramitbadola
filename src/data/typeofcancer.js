@@ -44,27 +44,55 @@ export const data = [{
 },
 {
     id: 10,
+    title: "Sarcoma",
+    path: "/typeofcancer/sarcoma",
+},
+{
+    id: 11,
+    title: "Bone Tumours",
+    path: "/typeofcancer/bone-tumours",
+}, {
+    id: 12,
+    title: "Kidney Cancer",
+    path: "/typeofcancer/kidney-cancer",
+},
+{
+    id: 13,
+    title: "Ovarian Cancer",
+    path: "/typeofcancer/ovarian-cancer",
+}, {
+    id: 14,
+    title: "Endometrial Cancer",
+    path: "/typeofcancer/endometrial-cancer",
+},
+{
+    id: 15,
+    title: "Anal Cancer",
+    path: "/typeofcancer/anal-cancer",
+}, {
+    id: 16,
+    title: "Testicular Cancer",
+    path: "/typeofcancer/testicular-cancer",
+},
+{
+    id: 17,
     title: "Head and Neck Cancer",
     path: "/typeofcancer/head-and-neck-cancer",
 },
 {
-    id: 11,
+    id: 18,
     title: "Oesophagus and Stomach Cancer",
     path: "/typeofcancer/oesophagus-and-stomach-cancer",
 },
 {
-    id: 12,
+    id: 19,
     title: "Hepatobiliary Cancers",
     path: "/typeofcancer/hepatobiliary-cancers",
 },
 {
-    id: 13,
+    id: 20,
     title: "Neuroendocrine Tumours",
     path: "/typeofcancer/neuroendocrine-tumours",
 },
-{
-    id: 14,
-    title: "Sarcoma",
-    path: "/typeofcancer/sarcoma",
-},
+
 ]
