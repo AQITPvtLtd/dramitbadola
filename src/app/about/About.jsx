@@ -52,7 +52,7 @@ const Aboutus = () => {
             <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-8">
                 {/* Image */}
                 <div className="lg:col-span-5 flex justify-center" ref={imageRef}>
-                    <div className="relative w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[450px] rounded-xl overflow-hidden transition-transform duration-300 hover:scale-102 shadow-xl">
+                    <div className="relative mt-10 w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[450px] rounded-xl overflow-hidden transition-transform duration-300 hover:scale-102 shadow-xl">
                         <Image
                             src="/about/doctorimg.jpeg"
                             width={500}
@@ -79,7 +79,7 @@ const Aboutus = () => {
                 </div>
             </div>
 
-            <div className="mt-16">
+            <div className="mt-10">
                 <Content />
                 <Statistics />
                 <Missionvision />

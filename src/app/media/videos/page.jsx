@@ -3,7 +3,7 @@ import Video from './Video'
 
 const page = () => {
   return (
-    <div className='mt-50 mb-30'>
+    <div>
         <Video />
     </div>
   )

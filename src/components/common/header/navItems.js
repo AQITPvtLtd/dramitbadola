@@ -1,23 +1,28 @@
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  {
-    label: "Treatments",
-    href: "/treatments",
-  },
+
   {
     label: "Type of Cancer",
     dropdown: [
       { label: "Brain Cancer", href: "/typeofcancer/brain-cancer" },
-      { label: "Blood Cancer", href: "/typeofcancer/blood-cancer" },
+      {
+        label: "Blood Cancer",
+        href: "/typeofcancer/blood-cancer",
+        dropdown: [
+          { label: "Leukemia", href: "/typeofcancer/blood-cancer/leukemia" },
+          { label: "Lymphoma", href: "/typeofcancer/blood-cancer/lymphoma" },
+          { label: "Multiple Myeloma", href: "/typeofcancer/blood-cancer/multiple-myeloma" },
+        ],
+      },
       { label: "Bone Cancer", href: "/typeofcancer/bone-cancer" },
       { label: "Breast Cancer", href: "/typeofcancer/breast-cancer" },
+      { label: "Bone Tumours", href: "/typeofcancer/bone-tumours" },
       { label: "Cervical Cancer", href: "/typeofcancer/cervical-cancer" },
       { label: "Colorectal Cancer", href: "/typeofcancer/colorectal-cancer" },
       { label: "Lung Cancer", href: "/typeofcancer/lung-cancer" },
       { label: "Prostate Cancer", href: "/typeofcancer/prostate-cancer" },
       { label: "Sarcoma", href: "/typeofcancer/sarcoma" },
-      { label: "Bone Tumours", href: "/typeofcancer/bone-tumours" },
       { label: "Kidney Cancer", href: "/typeofcancer/kidney-cancer" },
       { label: "Ovarian Cancer", href: "/typeofcancer/ovarian-cancer" },
       { label: "Anal Cancer", href: "/typeofcancer/anal-cancer" },
@@ -28,9 +33,9 @@ export const navItems = [
       { label: "Oesophagus and Stomach Cancer", href: "/typeofcancer/oesophagus-and-stomach-cancer" },
       { label: "Hepatobiliary Cancers", href: "/typeofcancer/hepatobiliary-cancers" },
       { label: "Neuroendocrine Tumours", href: "/typeofcancer/neuroendocrine-tumours" },
-
     ],
   },
+  { label: "Treatments", href: "/treatments" },
   { label: "Blogs", href: "/blogs" },
   {
     label: "Media",

@@ -11,11 +11,11 @@ const Breast = () => {
                     {/* Image Section */}
                     <div className="w-full max-w-8xl px-5 relative">
                         <Image
-                            src="/typeofcancer/breast.png"
+                            src="/typeofcancer/breast-cancer.jpeg"
                             width={1000}
                             height={500}
                             className="w-full lg:h-[300px] h-[200px] object-cover rounded-lg shadow-lg"
-                            alt="Breast Cancer"
+                            alt="breast-cancer"
                         />
                     </div>
 

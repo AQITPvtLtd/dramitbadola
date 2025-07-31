@@ -68,13 +68,15 @@ const Treatments = () => {
                                     <h2 className="text-lg font-bold text-[#d0342c] mb-1" style={{ fontFamily: "Roboto Slab, serif" }}>
                                         {item.title}
                                     </h2>
-                                    <p className="text-sm text-gray-700 line-clamp-3">
-                                        {item.description ? (
-                                            <span dangerouslySetInnerHTML={{ __html: item.description }} />
-                                        ) : (
-                                            "Loading..."
-                                        )}
-                                    </p>
+                                    {item.description ? (
+                                        <p
+                                            className="text-sm text-gray-700 line-clamp-3"
+                                            dangerouslySetInnerHTML={{ __html: item.description }}
+                                        />
+                                    ) : (
+                                        <p className="text-sm text-gray-700">Loading...</p>
+                                    )}
+
                                 </div>
 
                                 {/* Button */}

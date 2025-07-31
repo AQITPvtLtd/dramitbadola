@@ -9,12 +9,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const faqs = [
   { question: 'What is a Hemato-Oncologist?', answer: 'A Hemato-Oncologist is a doctor who specializes in diagnosing and treating blood-related cancers such as leukemia, lymphoma, myeloma, and other disorders of the blood, bone marrow, and lymphatic system.' },
-  { question: 'What types of cancers do you treat?', answer: 'I treat a wide range of blood cancers, including leukemia, lymphoma (Hodgkin and non-Hodgkin), multiple myeloma, and related conditions like myelodysplastic syndromes and bone marrow failure disorders.' },
-  { question: 'What are the early signs of blood cancer?', answer: 'Common early symptoms include unexplained weight loss, fatigue, frequent infections, night sweats, bruising easily, swollen lymph nodes, and persistent fever.' },
+  { question: 'Are cancer treatments painful?', answer: 'Most treatments are not painful, though they may have side effects like fatigue, nausea, or hair loss. We provide supportive care to manage these effects effectively.' },
   { question: 'How is blood cancer diagnosed?', answer: 'Diagnosis typically involves blood tests, bone marrow biopsy, imaging (like PET/CT scans), and sometimes genetic or molecular testing to confirm the type and stage of the disease.' },
+  { question: 'Can I work or travel during treatment?', answer: 'In many cases, yes. However, this depends on the type of treatment, your energy levels, and your overall condition. We guide you accordingly.' },
   { question: 'What treatment options do you offer?', answer: 'Treatment may include chemotherapy, targeted therapy, immunotherapy, stem cell (bone marrow) transplant, and CAR-T cell therapy — based on the patient’s condition and cancer type.' },
-  { question: 'Is blood cancer curable?', answer: 'Some types of blood cancers can be cured, especially if detected early and treated with appropriate therapies. Others can be managed effectively with long-term treatment.' },
-
+  { question: 'Can cancer come back after treatment?', answer: 'Yes, some cancers can recur even after successful treatment. We schedule regular follow-ups, scans, and blood tests to detect recurrence early and act promptly.' },
 ];
 
 const Faq = () => {
@@ -70,9 +69,8 @@ const Faq = () => {
               >
                 {faq.question}
                 <FaChevronDown
-                  className={`transform transition-transform duration-200 ${
-                    activeIndex === index ? "rotate-180" : ""
-                  } text-gray-500`}
+                  className={`transform transition-transform duration-200 ${activeIndex === index ? "rotate-180" : ""
+                    } text-gray-500`}
                 />
               </button>
               {activeIndex === index && (

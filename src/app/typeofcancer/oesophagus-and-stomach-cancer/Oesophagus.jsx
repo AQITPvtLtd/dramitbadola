@@ -9,11 +9,11 @@ const Oesophagus = () => {
                     {/* Image Section */}
                     <div className="w-full max-w-8xl px-5 relative mt-20">
                         <Image
-                            src="/typeofcancer/stomach1.avif"
+                            src="/typeofcancer/oesophagus-and-stomach-cancer.jpg"
                             width={1000}
                             height={500}
                             className="w-full lg:h-[300px] h-[200px] object-cover rounded-lg shadow-lg"
-                            alt="Blood Cancer"
+                            alt="oesophagus-and-stomach-cancer"
                         />
                     </div>
 

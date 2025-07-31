@@ -94,5 +94,4 @@ export const data = [{
     title: "Neuroendocrine Tumours",
     path: "/typeofcancer/neuroendocrine-tumours",
 },
-
 ]

@@ -11,11 +11,11 @@ const Prosate = () => {
                     {/* Image Section */}
                     <div className="w-full max-w-8xl px-5 relative">
                         <Image
-                            src="/typeofcancer/prostate.png"
+                            src="/typeofcancer/prostate-cancer.jpg"
                             width={1000}
                             height={500}
                             className="w-full lg:h-[300px] h-[200px] object-cover rounded-lg shadow-lg"
-                            alt="prostate"
+                            alt="prostate-cancer"
                         />
                     </div>
 

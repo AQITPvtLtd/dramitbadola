@@ -11,11 +11,11 @@ const Bone = () => {
                     {/* Image Section */}
                     <div className="w-full max-w-7xl px-4 relative">
                         <Image
-                            src="/typeofcancer/bone.png"
+                            src="/typeofcancer/bone-cancer.jpg"
                             width={1000}
                             height={500}
                             className="w-full h-[200px] sm:h-[300px] object-cover rounded-xl shadow-md"
-                            alt="Bone Cancer"
+                            alt="bone-cancer"
                         />
                     </div>
 

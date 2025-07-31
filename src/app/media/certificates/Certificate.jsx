@@ -42,7 +42,7 @@ const Certificate = () => {
     const closeModal = () => setSelectedIndex(null);
 
     return (
-        <div className="bg-[#f2efef] pt-10 min-h-screen">
+        <div className="bg-[#f2efef] min-h-screen mt-[150px]">
             {/* Banner */}
             <h1 className="text-4xl md:text-6xl text-center font-bold text-black" style={{ fontFamily: "Roboto Slab, serif" }}>
                 Our Certificates

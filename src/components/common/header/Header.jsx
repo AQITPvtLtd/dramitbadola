@@ -59,16 +59,41 @@ const Header = () => {
                         }`}
                     >
                       {item.dropdown.map((dropItem, i) => (
-                        <div key={i} className="py-0.5">
-                          <Link
-                            href={dropItem.href}
-                            className={`block px-4 py-2 text-sm gap-2 rounded-md font-semibold text-black transition-colors duration-200 hover:bg-[#d0342c] hover:text-white ${pathname === dropItem.href ? "bg-[#d0342c] text-white" : ""
-                              }`}
-                          >
-                            <div>{dropItem.label}</div>
-                          </Link>
+                        <div key={i} className="py-0.5 relative group">
+                          <div className="flex items-center justify-between ">
+                            <Link
+                              href={dropItem.href}
+                              className={`block hover:bg-[#d0342c] hover:text-white px-4 py-2 text-sm rounded-md font-semibold text-black transition-colors duration-200 ${pathname === dropItem.href ? "bg-[#d0342c] text-white" : ""
+                                }`}
+                            >
+                              <div className="flex items-center gap-2 text-sm">
+                                {dropItem.label}
+                                {dropItem.dropdown && <FaChevronDown className="text-xs ml-auto" />}
+                              </div>
+                            </Link>
+                          </div>
+
+                          {/* Nested dropdown */}
+                          {dropItem.dropdown && (
+                            <div className="absolute top-0 left-full z-50 bg-white border rounded-xl shadow-lg w-56 px-2 py-2 group-hover:flex hidden flex-col">
+                              {dropItem.dropdown.map((subItem, j) => (
+                                <div className="py-0.5" key={j}>
+                                  <Link
+                                    href={subItem.href}
+                                    className={`block px-4 py-2 text-sm rounded-md font-semibold text-black transition-colors duration-200 hover:bg-[#d0342c] hover:text-white ${pathname === subItem.href ? "bg-[#d0342c] text-white" : ""
+                                      }`}
+                                  >
+                                    {subItem.label}
+                                  </Link>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+
+
                         </div>
                       ))}
+
                     </div>
                   </div>
                 </>
@@ -129,14 +154,30 @@ const Header = () => {
                     {mobileDropdownOpen === index && (
                       <div className="ml-2 mt-2 bg-white border rounded-xl shadow-lg p-2">
                         {item.dropdown.map((dropItem, i) => (
-                          <Link
-                            key={i}
-                            href={dropItem.href}
-                            onClick={() => setIsOpen(false)}
-                            className="block px-4 py-2 rounded-md font-semibold text-black transition-colors duration-200 hover:bg-[#d0342c] hover:text-white"
-                          >
-                            {dropItem.label}
-                          </Link>
+                          <div key={i} className="mb-1">
+                            <Link
+                              href={dropItem.href}
+                              onClick={() => setIsOpen(false)}
+                              className="block px-4 py-2 rounded-md font-semibold text-black transition-colors duration-200 hover:bg-[#d0342c] hover:text-white"
+                            >
+                              {dropItem.label}
+                            </Link>
+
+                            {dropItem.dropdown && (
+                              <div className="ml-4 mt-1 border-l border-gray-200 pl-2">
+                                {dropItem.dropdown.map((subItem, j) => (
+                                  <Link
+                                    key={j}
+                                    href={subItem.href}
+                                    onClick={() => setIsOpen(false)}
+                                    className="block px-4 py-1 text-sm rounded-md font-medium text-black transition-colors duration-200 hover:bg-[#d0342c] hover:text-white"
+                                  >
+                                    {subItem.label}
+                                  </Link>
+                                ))}
+                              </div>
+                            )}
+                          </div>
                         ))}
                       </div>
                     )}
