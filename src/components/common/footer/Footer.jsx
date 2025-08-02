@@ -56,14 +56,15 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <div>
+        <div className='lg:-ml-10'>
           <h4 className="text-white font-semibold mb-4">Contact Us</h4>
           <ul className="space-y-4 text-sm text-white">
-            <Link href="https://maps.app.goo.gl/72m8dfxNqBuJndLU7" target='_blank'>
+            <Link href="/" target='_blank'>
               <li className="flex items-start gap-3 mb-5">
-                <IoLocationSharp className="text-white text-4xl" />
+                <IoLocationSharp className="text-white text-xl mt-1" />
                 <div className='hover:text-gray-300 cursor-pointer'>
-                  59/1, Race Course, Opp. UCO Bank, Dehradun, Uttarakhand - 248001
+                  Race Course Rd, East Rest Camp,
+                  <br /> Guru Nanak Vihar, Dehradun – 248001
                 </div>
               </li>
             </Link>
