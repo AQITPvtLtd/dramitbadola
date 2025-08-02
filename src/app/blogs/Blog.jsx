@@ -25,7 +25,7 @@ const Blog = () => {
   }, []);
 
   return (
-    <div className="lg:p-10 overflow-x-clip px-4 bg-[#f2efef] mt-5">
+    <div className="lg:p-10 overflow-x-clip px-4 bg-[#f2efef]">
       <div className="pt-5 text-center">
         <h1 className="text-3xl font-bold dark:text-black" style={{ fontFamily: "Roboto Slab, serif" }}>Read our latest blogs</h1>
       </div>
