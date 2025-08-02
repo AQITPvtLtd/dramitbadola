@@ -48,7 +48,7 @@ const Aboutus = () => {
     }, []);
 
     return (
-        <div className="px-4 md:px-10 lg:px-20 py-10 bg-[#f2efef]">
+        <div className="px-4 md:px-10 lg:px-20 py-5 bg-[#f2efef]">
             <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-8">
                 {/* Image */}
                 <div className="lg:col-span-5 flex justify-center" ref={imageRef}>
@@ -79,7 +79,7 @@ const Aboutus = () => {
                 </div>
             </div>
 
-            <div className="mt-10">
+            <div className="lg:mt-10">
                 <Content />
                 <Statistics />
                 <Missionvision />

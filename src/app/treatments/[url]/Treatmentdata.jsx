@@ -16,7 +16,7 @@ const Treatmentdata = ({ url }) => {
         <div className="mx-auto px-4 py-8 bg-[#f2efef]">
             <div className="flex flex-col items-center">
                 {/* Image Section */}
-                <div className="w-full max-w-8xl relative">
+                <div className="w-full max-w-8xl relative mt-8">
                     <Image
                         src={service.image}
                         width={1000}

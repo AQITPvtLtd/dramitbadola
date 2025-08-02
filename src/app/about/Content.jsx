@@ -101,20 +101,22 @@ const Content = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 md:flex gap-8">
       {/* Sidebar Tabs */}
-      <div className="flex flex-wrap md:flex-col justify-center md:justify-start gap-3 w-full md:w-1/3 mb-6 md:mb-0">
-        {categories.map((category) => (
-          <button
-            key={category}
-            onClick={() => setActiveCategory(category)}
-            className={`min-w-[140px] cursor-pointer text-center px-5 py-3 rounded-xl text-sm md:text-base shadow-sm transition-all duration-200 font-semibold
-              ${activeCategory === category
-                ? "bg-[#d0342c] text-white"
-                : "bg-gray-100 text-gray-800 hover:bg-[#d0342c] hover:text-white"
-              }`}
-          >
-            {category}
-          </button>
-        ))}
+      <div className="w-full md:w-1/3 mb-6 md:mb-0 flex justify-center md:block">
+        <div className="flex flex-wrap gap-3 justify-center md:flex-col md:justify-start">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setActiveCategory(category)}
+              className={`px-4 py-2 rounded-full text-sm md:text-base font-semibold transition-all duration-200 shadow-sm
+          ${activeCategory === category
+                  ? "bg-[#d0342c] text-white"
+                  : "bg-gray-100 text-gray-800 hover:bg-[#d0342c] hover:text-white"
+                }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Main Content with animation */}

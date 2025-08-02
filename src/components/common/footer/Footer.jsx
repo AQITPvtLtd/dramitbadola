@@ -91,7 +91,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="mt-8 flex justify-center items-center text-lg font-semibold text-white text-center">
         <a href="https://tekbooster.com/" target='_blank' className="hover:text-[#D1D5DB]" style={{ fontFamily: "Roboto Slab, serif" }}>
-          Design & Developed By Tek Booster (Digital Marketing Company)
+          Design & Developed By <br className='lg:hidden' /> Tek Booster (Digital Marketing Company)
         </a>
       </div>
     </footer>
