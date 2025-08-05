@@ -70,7 +70,26 @@ export const data = [
                 "<p>Chemotherapy continues to be a cornerstone in cancer treatment. With ongoing advancements, it remains a powerful tool in managing and curing various types of cancer, offering hope and improved outcomes for patients worldwide.</p>"
             ],
 
-        btn: "Know More"
+        btn: "Know More",
+        meta_title: "Chemotherapy in Dehradun | Information & Cancer Treatment | Dr. Amit Badola | Medical Oncology Expert",
+        meta_desc: "Learn about chemotherapy in Dehradun — how it works, when it’s used, common side effects, and recovery. Dr. Amit Badola provides expert-guided, personalized chemotherapy plans tailored to each patient’s cancer type and stage.",
+        keyword: [
+            "chemotherapy in dehradun",
+            "what is chemotherapy",
+            "how chemotherapy works",
+            "chemotherapy side effects",
+            "cancer treatment with chemotherapy",
+            "chemotherapy for breast cancer",
+            "chemotherapy for lung cancer",
+            "personalized chemotherapy dehradun",
+            "chemotherapy doctor dehradun",
+            "chemotherapy cycle dehradun",
+            "medical oncologist chemotherapy",
+            "advanced cancer therapy dehradun",
+            "chemo drugs dehradun",
+            "types of chemotherapy",
+            "chemotherapy success rates dehradun"
+        ],
     },
     {
         id: 2,
@@ -131,7 +150,26 @@ export const data = [
                 "<h2><strong>Conclusion</strong></h2>",
                 "<p>Targeted therapy represents a major advancement in cancer care by offering more personalized and less toxic treatments. With continued innovation, it holds the potential to transform outcomes for many cancer patients worldwide.</p>"
             ],
-        btn: "Know More"
+        btn: "Know More",
+        meta_title: "Targeted Therapy in Dehradun | Information & Cancer Treatment | Dr. Amit Badola | Medical Oncology Expert",
+        meta_desc: "Explore how targeted therapy in Dehradun is revolutionizing cancer care. Dr. Amit Badola offers precise, personalized treatments that attack cancer cells while sparing healthy tissue—based on molecular profiling and advanced diagnostics.",
+        keyword: [
+            "targeted therapy in dehradun",
+            "what is targeted therapy",
+            "cancer targeted therapy dehradun",
+            "targeted therapy for cancer",
+            "precision oncology dehradun",
+            "personalized cancer treatment",
+            "targeted therapy side effects",
+            "targeted drugs dehradun",
+            "targeted therapy for lung cancer",
+            "targeted therapy for breast cancer",
+            "molecular targeted therapy dehradun",
+            "medical oncologist for targeted therapy",
+            "advanced cancer treatment dehradun",
+            "types of targeted therapy",
+            "targeted therapy doctor dehradun"
+        ],
     },
     {
         id: 3,
@@ -201,7 +239,26 @@ export const data = [
                 "<h2><strong>Conclusion</strong></h2>",
                 "<p>Immunotherapy represents a significant breakthrough in cancer treatment, offering new hope to patients worldwide. By harnessing the power of the immune system, it provides a more targeted and long-lasting approach compared to traditional therapies.</p>"
             ],
-        btn: "Know More"
+        btn: "Know More",
+        meta_title: "Immunotherapy in Dehradun | Information & Cancer Treatment | Dr. Amit Badola | Medical Oncology Expert",
+        meta_desc: "Discover how immunotherapy in Dehradun is transforming cancer care. Dr. Amit Badola offers advanced, immune-based treatments that help your body fight cancer naturally, with personalized plans tailored to your diagnosis.",
+        keyword: [
+            "immunotherapy in dehradun",
+            "what is immunotherapy",
+            "cancer immunotherapy dehradun",
+            "immunotherapy treatment dehradun",
+            "immune checkpoint inhibitors dehradun",
+            "immunotherapy side effects",
+            "immunotherapy for lung cancer",
+            "immunotherapy for melanoma",
+            "advanced cancer immunotherapy",
+            "medical oncologist immunotherapy",
+            "immune-based cancer treatment",
+            "personalized immunotherapy dehradun",
+            "types of immunotherapy",
+            "cancer vaccine therapy dehradun",
+            "immunotherapy expert dehradun"
+        ],
     },
     {
         id: 4,
@@ -265,7 +322,26 @@ export const data = [
                 "<h2><strong>Conclusion</strong></h2>",
                 "<p>Stem cell transplant is a powerful and life-saving treatment for many blood cancers and disorders. With continued medical advancements, it offers patients a greater chance at long-term remission and recovery.</p>"
             ],
-        btn: "Know More"
+        btn: "Know More",
+        meta_title: "Stem Cell Transplant in Dehradun | Information & Cancer Treatment | Dr. Amit Badola | Medical Oncology Expert",
+        meta_desc: "Learn about stem cell transplant in Dehradun — its types, procedure, benefits, and role in cancer treatment. Dr. Amit Badola offers expert-guided transplant care for blood cancers like leukemia, lymphoma, and myeloma.",
+        keyword: [
+            "stem cell transplant in dehradun",
+            "bone marrow transplant dehradun",
+            "hematopoietic stem cell transplant",
+            "stem cell therapy cancer dehradun",
+            "allogeneic transplant dehradun",
+            "autologous transplant dehradun",
+            "stem cell transplant for leukemia",
+            "stem cell transplant for lymphoma",
+            "multiple myeloma stem cell transplant",
+            "cancer treatment stem cell dehradun",
+            "stem cell transplant specialist dehradun",
+            "medical oncologist transplant dehradun",
+            "transplant recovery dehradun",
+            "blood cancer transplant dehradun",
+            "advanced cancer care dehradun"
+        ],
     },
     {
         id: 5,
@@ -333,7 +409,26 @@ export const data = [
                 "<h2><strong>Conclusion</strong></h2>",
                 "<p>Supportive therapy is a vital component of cancer treatment that ensures patients are not just surviving, but living with dignity and comfort. By addressing the physical, emotional, and social aspects of cancer, it plays a key role in comprehensive cancer care.</p>"
             ],
-        btn: "Know More"
+        btn: "Know More",
+        meta_title: "Palliative Care in Dehradun | Information & Supportive Cancer Treatment | Dr. Amit Badola | Medical Oncology Expert",
+        meta_desc: "Explore palliative care in Dehradun — focused on improving quality of life for cancer patients through pain management, symptom relief, and emotional support. Dr. Amit Badola offers compassionate, patient-centered palliative care alongside ongoing treatment.",
+        keyword: [
+            "palliative care in dehradun",
+            "cancer palliative care",
+            "supportive care for cancer patients",
+            "pain management in cancer",
+            "end-of-life care dehradun",
+            "palliative treatment dehradun",
+            "symptom relief in cancer",
+            "holistic cancer care dehradun",
+            "palliative oncology dehradun",
+            "emotional support for cancer patients",
+            "advanced cancer comfort care",
+            "quality of life cancer care",
+            "oncology palliative specialist dehradun",
+            "cancer fatigue and pain relief",
+            "palliative care doctor dehradun"
+        ],
     },
     {
         id: 6,
@@ -396,7 +491,26 @@ export const data = [
                 "<h2><strong>Conclusion</strong></h2>",
                 "<p>Radiation therapy remains a cornerstone in cancer treatment. With technological progress, it continues to offer safe, precise, and effective options to destroy cancer cells and improve patient outcomes.</p>"
             ],
-        btn: "Know More"
+        btn: "Know More",
+        meta_title: "Radiation Therapy in Dehradun | Information & Cancer Treatment | Dr. Amit Badola | Medical Oncology Expert",
+        meta_desc: "Learn about radiation therapy in Dehradun — how it works, types of radiation, and its role in cancer treatment. Dr. Amit Badola collaborates with leading radiation oncologists to ensure safe, effective, and targeted cancer care.",
+        keyword: [
+            "radiation therapy in dehradun",
+            "what is radiation therapy",
+            "types of radiation therapy",
+            "external beam radiation",
+            "internal radiation therapy",
+            "radiotherapy for cancer",
+            "radiation treatment dehradun",
+            "side effects of radiation therapy",
+            "radiation oncology dehradun",
+            "targeted radiation for cancer",
+            "radiation for brain tumor",
+            "radiation for breast cancer",
+            "radiation for prostate cancer",
+            "cancer treatment with radiation",
+            "radiation oncologist dehradun"
+        ],
     },
     {
         id: 7,
@@ -455,6 +569,25 @@ export const data = [
                 "<h2><strong>Conclusion</strong></h2>",
                 "<p>Clinical trials are essential for the progress of cancer treatment. They offer hope, innovation, and a chance to contribute to medical advancements. Patients who participate help shape the future of cancer care.</p>"
             ],
-        btn: "Know More"
+        btn: "Know More",
+        meta_title: "Clinical Trials in Dehradun | Cancer Research & Advanced Treatment Access | Dr. Amit Badola | Medical Oncology Expert",
+        meta_desc: "Explore ongoing cancer clinical trials in Dehradun and learn how they offer access to the latest treatments and research breakthroughs. Dr. Amit Badola helps eligible patients participate in safe, ethical, and cutting-edge oncology trials.",
+        keyword: [
+            "clinical trials in dehradun",
+            "cancer clinical trials dehradun",
+            "oncology trials dehradun",
+            "new cancer treatments dehradun",
+            "research-based cancer treatment",
+            "clinical research dehradun",
+            "experimental cancer therapy dehradun",
+            "clinical trial enrollment dehradun",
+            "early phase cancer trials",
+            "immunotherapy trials dehradun",
+            "targeted therapy trials dehradun",
+            "cancer drug trials dehradun",
+            "clinical trials for blood cancer",
+            "patient participation in trials dehradun",
+            "advanced cancer research dehradun"
+        ],
     },
 ]
